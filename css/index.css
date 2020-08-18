@@ -1,0 +1,359 @@
+/*----------------------------------------------
+    IMPORT FONTS
+-----------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+/*----------------------------------------------
+    IMPORT FILES
+-----------------------------------------------*/
+/* @import url(/css/animation.css); */
+
+/*----------------------------------------------
+  Container fluid
+  ---------------------------------------------*/
+.container-fluid {
+  background: url(/images/background-slider.jpg) no-repeat fixed center center;
+  background-size: cover;
+
+  width: 100%;
+  height: 100vh;
+}
+
+.container-fluid__content {
+  position: relative;
+  top: 30%;
+
+  line-height: 1.15;
+
+  text-align: center;
+  color: var(--white-color);
+}
+
+.container-fluid__content > p:first-child,
+.container-fluid__content > p:nth-child(2) {
+  font-family: "Sacramento", cursive;
+}
+
+.container-fluid__content > p:first-child {
+  font-size: 7.2rem;
+
+  position: relative;
+  display: inline-block;
+  color: var(--yellow-color);
+}
+
+.container-fluid__content > p:first-child::before {
+  content: "";
+  position: absolute;
+  top: -2.2rem;
+  right: 5rem;
+
+  width: 5rem;
+  height: 5rem;
+
+  animation: topToBottom 1 2s;
+  background: url(/images/Vector-Smart-Object.png) no-repeat;
+}
+
+.container-fluid__content > p:nth-child(2) {
+  font-size: 3.6rem;
+  padding: 0 0 2rem;
+}
+
+.container-fluid__content .title {
+  position: relative;
+
+  font-size: 7.2rem;
+  height: 17rem;
+
+  color: var(--yellow-color);
+  font-family: "Pacifico", cursive;
+}
+
+.title .title-left {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  animation: leftToRight 1 3s;
+}
+
+.title .title-right {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  bottom: 0;
+
+  animation: rightToLeft 1 3s;
+}
+
+a.btn {
+  display: inline-block;
+  padding: 1.5rem 5rem;
+  border-radius: 2rem;
+  border: 0.3rem solid var(--primary-color);
+
+  color: var(--primary-color);
+
+  background-size: 100% 200%;
+  background-image: linear-gradient(
+    to top,
+    var(--primary-color) 50%,
+    transparent 50%
+  );
+
+  transition: background-position 0.5s, color 0.1s ease;
+}
+
+a.btn-color {
+  color: var(--white-color);
+  margin-top: 3rem;
+}
+
+a.btn:hover {
+  color: var(--white-color);
+  background-position: 0 100%;
+}
+
+/*----------------------------------------------
+  About Us
+  ---------------------------------------------*/
+.about {
+  padding: 6rem 0;
+}
+
+.about__desc {
+  text-align: center;
+}
+
+.about__img img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.about__desc-intro {
+  line-height: 1.5;
+  padding: 1rem 0;
+}
+
+.about__desc-intro span {
+  color: var(--primary-color);
+}
+
+.about__desc-details {
+  text-align: justify;
+}
+
+.about__desc-details p {
+  padding: 0.5rem 0;
+}
+
+.about__desc-book {
+  padding: 2rem 0;
+}
+
+/*----------------------------------------------
+  Qoute
+  ---------------------------------------------*/
+.qoute {
+  background: url(/images/qt-bg.jpg) no-repeat fixed center center;
+  background-size: cover;
+  position: relative;
+  padding: 10rem 0;
+}
+
+.qoute::before {
+  content: "";
+  background: var(--black-color);
+  opacity: 0.6;
+
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+}
+.qoute__details h3 {
+  position: relative;
+  z-index: 2;
+
+  font-size: 3rem;
+  line-height: 3.6rem;
+
+  padding: 1rem 0;
+  color: var(--white-color);
+  text-align: center;
+}
+
+/*----------------------------------------------
+  Special Menu
+  ---------------------------------------------*/
+.headline {
+  font-size: 2.4rem;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.headline h3 {
+  font-size: 3rem;
+  padding: 2rem 0;
+}
+
+/* navbar menu */
+.navbar-menu a {
+  display: block;
+  font-size: 2rem;
+
+  color: var(--primary-color);
+
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+
+  transition: all ease 0.3s;
+}
+
+.navbar-menu a.active {
+  color: var(--white-color);
+  background: var(--primary-color);
+}
+
+.navbar-menu a:hover {
+  color: var(--white-color);
+  background: var(--primary-color);
+}
+
+/* menu list */
+.menu-items {
+  position: relative;
+  margin-top: 3rem;
+}
+
+.fixed-row--margin {
+  margin-top: -3rem;
+}
+
+.menu-items img {
+  display: block;
+  box-shadow: 0 0 1rem 0.4rem var(--shadow-color);
+
+  width: 100%;
+  height: auto;
+}
+.info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background: var(--light-primary-color);
+  overflow: hidden;
+
+  width: 100%;
+  height: 0;
+
+  transition: height 0.4s ease;
+}
+
+.menu-items:hover .info {
+  height: 100%;
+}
+
+.info__details {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  color: var(--white-color);
+
+  overflow: hidden;
+  padding: 1.5rem;
+}
+
+.info__details h4:nth-child(3) {
+  border-top: 0.1rem dashed var(--black-color);
+  padding: 1rem 0;
+}
+
+.info__details p {
+  padding: 0.5rem 0;
+}
+
+/*----------------------------------------------
+  Garelly
+  ---------------------------------------------*/
+.garelly-items {
+  padding: 2rem;
+}
+
+.garelly-items img {
+  width: 100%;
+  height: auto;
+
+  border: 0.4rem solid var(--primary-color);
+}
+
+.garelly-items img:hover {
+  transform: scale(1.03);
+
+  border: none;
+  box-shadow: 0 0 3rem var(--shadow-color);
+
+  transition: all ease 0.3s;
+}
+
+/*----------------------------------------------
+  Customer Reviews
+  ---------------------------------------------*/
+.customer-reviews {
+  padding: 5rem 0;
+}
+
+.reviews {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.carousel-items__info {
+  padding: 0 15%;
+}
+
+.carousel-items__info h3 {
+  font-size: 3.6rem;
+  padding: 1rem 0;
+
+  color: var(--primary-color);
+}
+
+.carousel-items__info p {
+  text-align: justify;
+  padding: 0 0 1rem;
+  font-size: 1.6rem;
+}
+
+a.carousel-control-previous {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+
+  padding: 1.5rem 3rem;
+}
+
+a.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+
+  padding: 1.5rem 3rem;
+}
+.carousel-control-previous i,
+.carousel-control-next i {
+  font-size: 3rem;
+}

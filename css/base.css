@@ -1,0 +1,38 @@
+:root {
+  --primary-color: #f05123;
+  --secondary-color: #00438b;
+  --yellow-color: #faff6c;
+  --light-primary-color: #cfa671b2;
+  --white-color: #fff;
+  --shadow-color: #7f89a19a;
+  --black-color: #000;
+  --text-color: #333;
+  --gray-color: #cccbcb;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.5rem;
+}
+
+body {
+  background: var(--white-color);
+  color: var(--text-color);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+}

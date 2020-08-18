@@ -1,0 +1,67 @@
+/*---------------------------------
+  Navbar
+  --------------------------------*/
+/* navbar__overlay */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*----------------------------------
+  Container-fluid
+  ---------------------------------*/
+/* container-fluid__content p:first-child::before */
+@keyframes topToBottom {
+  0% {
+    top: -6.2rem;
+  }
+  25% {
+    top: -2.2rem;
+  }
+  45% {
+    top: -5.2rem;
+  }
+  60% {
+    top: -2.2rem;
+  }
+  75% {
+    top: -3rem;
+  }
+  85% {
+    top: -2.2rem;
+  }
+  95% {
+    top: -2.6rem;
+  }
+  100% {
+    top: -2.2rem;
+  }
+}
+
+/* container-fluid__content .title */
+/* title-left */
+@keyframes leftToRight {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+  }
+}
+
+/* title-right */
+@keyframes rightToLeft {
+  from {
+    right: 0;
+  }
+  to {
+    right: 50%;
+    transform: translateX(50%);
+    white-space: nowrap;
+  }
+}

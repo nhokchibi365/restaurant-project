@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thành Nam Restaurant</title>
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" href="/NewBiz/img/favicon.png"> -->
+
+    <!-- Reset layout -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+
+    <!-- Main StyleSheet CSS -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="grid" style="overflow:hidden;">
+        <!-- header -->
+        <header class="header fixed-top">
+            <div class="navbar">
+                <!-- nav pc -->
+                <nav class="grid wide row">
+                    <div class="navbar__left">
+                        <a href="/index.html"><img src="images/logo-brand.png" alt="logo"></a>
+                    </div>
+                    <div class="navbar__right hide-on-mobile-tablet">
+                        <ul>
+                            <li><a class="active" href="index.html">Trang Chủ</a></li>
+                            <li><a href="index.html">Thực Đơn</a></li>
+                            <li><a href="index.html">Đặt Bàn</a></li>
+                            <li class="sub-menu">
+                                <a href="index.html">Blog
+                                    <i class="fa fa-caret-down"></i>
+                                </a>
+                                <ul class="sub-menu__content">
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Blog Cá Nhân</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="index.html">Liên Hệ</a></li>
+                            <li class="sub-menu">
+                                <a href="index.html">Khác
+                                    <i class="fa fa-caret-down"></i>
+                                </a>
+                                <ul class="sub-menu__content">
+                                    <li><a href="#">Về Chúng Tôi</a></li>
+                                    <li><a href="#">Thư Viện Ảnh</a></li>
+                                    <li><a href="#">Đầu Bếp</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <!-- nav mobile - tablet -->
+                <div>
+                    <label for="navbar-btn--input" class="navbar-btn display-on-mobile-tablet">
+                        <i class="fas fa-bars fa-2x"></i>
+                    </label>
+                    <input type="checkbox" name="btn" id="navbar-btn--input" class="navbar-input" hidden>
+                    <label for="navbar-btn--input" class="navbar__overlay"></label>
+                    <nav class="navbar-moble-tablet">
+                        <label for="navbar-btn--input" class="navbar-btn--close"><i
+                                class="fas fa-times fa-2x"></i></label>
+                        <ul class="navbar-list">
+                            <li>
+                                <a class="active navbar-link" href="index.html"><i class="fas fa-home"></i></i>Trang
+                                    Chủ</a>
+                            </li>
+                            <li>
+                                <a class="navbar-link" href="index.html"><i class="far fa-list-alt"></i></i>Thực Đơn</a>
+                            </li>
+                            <li><a class="navbar-link" href="index.html"><i class="fas fa-chair"></i>Đặt Bàn</a></li>
+                            <li><a class="navbar-link" href="#"><i class="fas fa-blog"></i>Blog</a></li>
+                            <li><a class="navbar-link" href="index.html"><i class="fas fa-phone-volume"></i>Liên Hệ</a>
+                            </li>
+                            <li><a class="navbar-link" href="#"><i class="far fa-address-card"></i></i>Về Chúng Tôi</a>
+                            </li>
+                            <li><a class="navbar-link" href="#"><i class="far fa-image"></i>Thư Viện Ảnh</a></li>
+                            <li><a class="navbar-link" href="#"><i class="fas fa-utensils"></i>Đầu Bếp</a></li>
+                        </ul>
+                    </nav>
+                </div>
+        </header>
+        <!-- end header -->
+
+        <!-- container-fluid -->
+        <section class="container-fluid">
+            <div class="grid wide container-fluid__content">
+                <p>Premium</p>
+                <p class="animate__animated animate__fadeInLeft">Quality</p>
+                <div class="title">
+                    <p class="title-left">Thành Nam</p>
+                    <p class="title-right">Restaurant</p>
+                </div>
+                <a class="btn btn-color" href="#">Đặt Bàn</a>
+            </div>
+        </section>
+        <!-- end container-fluid-->
+
+        <!-- about us -->
+        <section class="about">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-3 m-3 s-0 about__img">
+                        <img src="images/about-01.jpg" alt="about images">
+                    </div>
+                    <div class="col l-6 m-6 s-12 about__desc">
+                        <div class="about__desc-intro">
+                            <h2 class="animate__animated animate__fadeInLeft">Chào Mừng Bạn Đến Với <br> <span>Thành Nam
+                                    Restaurant</span></h2>
+                        </div>
+                        <div class="about__desc-details">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores commodi sed fuga dolores
+                                veritatis
+                                ipsa reiciendis, dignissimos nihil accusantium? Quam natus distinctio dolore praesentium
+                                excepturi!
+                                Dolore necessitatibus corporis assumenda adipisci.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ullam sint dolor quas
+                                quidem
+                                accusamus quos nam nesciunt accusantium qui autem, molestias cupiditate quam assumenda
+                                ea
+                                reprehenderit quae laudantium vel.</p>
+                        </div>
+                        <div class="about__desc-book">
+                            <a class="btn" href="#">Đặt Bàn</a>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-3 s-0 about__img">
+                        <img src="images/about-02.jpg" alt="about images">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end about us-->
+
+        <!-- qoute -->
+        <section class="qoute">
+            <div class="qoute__details">
+                <h3>" If you're not the one cooking, stay out of the way and compliment the chef. "</h3>
+                <h3>Michael Strahan</h3>
+            </div>
+        </section>
+        <!-- end qoute -->
+
+        <!-- special menu -->
+        <section class="grid wide">
+            <header class="headline">
+                <h3>Special Menu</h3>
+                <p>Hãy chọn những món ăn mà bạn cảm thấy thích !!!</p>
+            </header>
+            <div class="row">
+                <div class="col l-3 m-12 s-12">
+                    <ul class="navbar-menu">
+                        <li><a class="active" href="#">Tất Cả</a></li>
+                        <li><a href="#">Thức Uống</a></li>
+                        <li><a href="#">Bữa Trưa</a></li>
+                        <li><a href="#">Bữa Tối</a></li>
+                    </ul>
+                </div>
+                <div class="col l-9 m-12 s-12">
+                    <div class="row fixed-row--margin">
+                        <div class="col l-4 m-6 s-12">
+                            <div class="menu-items">
+                                <img src="images/img-01.jpg" alt="drink 1">
+                                <div class="info">
+                                    <div class="info__details">
+                                        <h4>Special Drinks 1</h4>
+                                        <p>Sed id magna vitae eros sagittis</p>
+                                        <h4>$7.79</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-6 s-12">
+                            <div class="menu-items">
+                                <img src="images/img-02.jpg" alt="drink 2">
+                                <div class="info">
+                                    <div class="info__details">
+                                        <h4>Special Drinks 2</h4>
+                                        <p>Sed id magna vitae eros sagittis euismod.</p>
+                                        <h4>$7.79</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-6 s-12">
+                            <div class="menu-items">
+                                <img src="images/img-03.jpg" alt="drink 3">
+                                <div class="info">
+                                    <div class="info__details">
+                                        <h4>Special Drinks 3</h4>
+                                        <p>Sed id magna vitae eros sagittis euismod.</p>
+                                        <h4>$7.79</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-6 s-12">
+                            <div class="menu-items">
+                                <img src="images/img-04.jpg" alt="lunch 1">
+                                <div class="info">
+                                    <div class="info__details">
+                                        <h4>Special Lunch 1</h4>
+                                        <p>Sed id magna vitae eros sagittis euismod.</p>
+                                        <h4>$7.79</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-6 s-12">
+                            <div class="menu-items">
+                                <img src="images/img-05.jpg" alt="lunch 2">
+                                <div class="info">
+                                    <div class="info__details">
+                                        <h4>Special Lunch 2</h4>
+                                        <p>Sed id magna vitae eros sagittis euismod.</p>
+                                        <h4>$7.79</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-6 s-12">
+                            <div class="menu-items">
+                                <img src="images/img-06.jpg" alt="lunch 3">
+                                <div class="info">
+                                    <div class="info__details">
+                                        <h4>Special Lunch 3</h4>
+                                        <p>Sed id magna vitae eros sagittis euismod.</p>
+                                        <h4>$7.79</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-6 s-12">
+                            <div class="menu-items">
+                                <img src="images/img-07.jpg" alt="dinner 1">
+                                <div class="info">
+                                    <div class="info__details">
+                                        <h4>Special Dinner 1</h4>
+                                        <p>Sed id magna vitae eros sagittis euismod.</p>
+                                        <h4>$7.79</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-6 s-12">
+                            <div class="menu-items">
+                                <img src="images/img-08.jpg" alt="dinner 2">
+                                <div class="info">
+                                    <div class="info__details">
+                                        <h4>Special Dinner 2</h4>
+                                        <p>Sed id magna vitae eros sagittis euismod.</p>
+                                        <h4>$7.79</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-6 s-12">
+                            <div class="menu-items">
+                                <img src="images/img-09.jpg" alt="dinner 3">
+                                <div class="info">
+                                    <div class="info__details">
+                                        <h4>Special Dinner 3</h4>
+                                        <p>Sed id magna vitae eros sagittis euismod.</p>
+                                        <h4>$7.79</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end special menu -->
+
+        <!-- garelly -->
+        <section class="grid wide">
+            <header class="headline">
+                <h3>Gallery</h3>
+                <p>Hãy chiêm ngưỡng những món ăn tuyệt đẹp !!!</p>
+            </header>
+            <div class="row">
+                <div class="col l-4 m-6 s-12 garelly-items">
+                    <img src="images/gallery-img-01.jpg" alt="img 1">
+                </div>
+                <div class="col l-4 m-6 s-6 garelly-items">
+                    <img src="images/gallery-img-02.jpg" alt="img 2">
+                </div>
+                <div class="col l-4 m-6 s-6 garelly-items">
+                    <img src="images/gallery-img-03.jpg" alt="img 3">
+                </div>
+                <div class="col l-4 m-6 s-12 garelly-items">
+                    <img src="images/gallery-img-04.jpg" alt="img 4">
+                </div>
+                <div class="col l-4 m-6 s-6 garelly-items">
+                    <img src="images/gallery-img-05.jpg" alt="img 5">
+                </div>
+                <div class="col l-4 m-6 s-6 garelly-items">
+                    <img src="images/gallery-img-06.jpg" alt="img 6">
+                </div>
+            </div>
+        </section>
+        <!-- end garelly -->
+
+        <!-- customer reviews -->
+        <section class="grid wide customer-reviews">
+            <div class="row">
+                <header class="col l-12 m-12 s-12 headline">
+                    <h3>Nhận Xét Của Khách Hàng</h3>
+                    <p>Hãy xem khách hàng nhận xét gì về chúng tôi !!!</p>
+                </header>
+                <div class="col l-12 m-12 s-12 reviews">
+                    <div class="row carousel-items">
+                        <div class="col l-12 m-12 s-0 carousel-items__img">
+                            <img src="images/quotations-button.png" alt="quotations-button">
+                        </div>
+                        <div class="col l-12 m-12 s-12 carousel-items__info">
+                            <h3>Thành Nam</h3>
+                            <h4>Web Developer</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptatem ratione
+                                debitis,
+                                iste nesciunt reprehenderit consequuntur perferendis asperiores odit, fuga animi cumque
+                                eius
+                                consequatur sed? Exercitationem voluptates illo fugiat beatae.</p>
+                        </div>
+                        <a class="btn carousel-control-previous" href="#">
+                            <i class="fas fa-angle-left"></i>
+                        </a>
+                        <a class="btn carousel-control-next" href="#">
+                            <i class="fas fa-angle-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end customer reviews -->
+
+        <!-- footer -->
+        <footer class="footer">
+            <!-- footer top -->
+            <div class="footer__top">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-6 m-6 s-0">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9356596756593!2d106.6756248153521!3d10.816235861414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e19559e523%3A0x8e4133bdb1373cc9!2zMzcxIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1597454228030!5m2!1svi!2s"
+                                width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""
+                                aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                        <div class="col l-6 m-6 s-0">
+                            <div class="row">
+                                <div class="col l-12 m-12 footer__top-right">
+                                    <i class="fas fa-phone-volume"></i>
+                                    <p><span>Phone</span><br>+84 1944-183-710</p>
+                                </div>
+                                <div class="col l-12 m-12 footer__top-right">
+                                    <i class="far fa-envelope"></i>
+                                    <p><span>Email</span><br>nhokchibi365@gmail.com</p>
+                                </div>
+                                <div class="col l-12 m-12 footer__top-right">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <p><span>Location</span><br>371 Nguyễn Kiệm, P.3, Q.Gò Vấp</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer mid -->
+            <div class="footer__mid">
+                <div class="footer__mid-bg">
+                    <div class="grid wide">
+                        <div class="footer__mid-content">
+                            <div class="row">
+                                <div class="col l-3 m-6 s-12 footer__mid-items footer__mid-about">
+                                    <div class="footer__mid-items--headline">
+                                        <h3>Về Chúng Tôi</h3>
+                                    </div>
+                                    <div class="footer__mid-items--details">
+                                        <p>Integer cursus scelerisque ipsum id efficitur. Donec a dui fringilla, gravida
+                                            lorem
+                                            ac,
+                                            semper magna. Aenean rhoncus ac lectus a interdum. Vivamus semper posuere
+                                            dui.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-6 s-12 footer__mid-items footer__mid-subcribe">
+                                    <div class="footer__mid-items--headline">
+                                        <h3>Đăng Ký Nhận Thông Tin</h3>
+                                    </div>
+                                    <div class="footer__mid-items--details">
+                                        <form action="#">
+                                            <input type="text" placeholder="Nhập địa chỉ Email..." required>
+                                            <input type="submit" value="Đăng Ký">
+                                        </form>
+                                        <ul class="social-items">
+                                            <li>
+                                                <a class="btn-footer" href="#"><i class="fab fa-twitter"></i></a>
+                                            </li>
+                                            <li>
+                                                <a class="btn-footer" href="#"><i class="fab fa-facebook-f"></i></a>
+                                            </li>
+                                            <li>
+                                                <a class="btn-footer" href="#"><i class="fab fa-instagram"></i></a>
+                                            </li>
+                                            <li>
+                                                <a class="btn-footer" href="#"><i class="fab fa-google"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-6 s-12 footer__mid-items">
+                                    <div class="footer__mid-items--headline">
+                                        <h3>Thông Tin Liên Lạc</h3>
+                                    </div>
+                                    <div class="footer__mid-items--details">
+                                        <p>371 Nguyễn Kiệm, P.3, Q.Gò Vấp</p>
+                                        <p>+84 1944-183-710</p>
+                                        <p>nhokchibi365@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-6 s-12 footer__mid-items">
+                                    <div class="footer__mid-items--headline">
+                                        <h3>Giờ Mở Cửa</h3>
+                                    </div>
+                                    <div class="footer__mid-items--details">
+                                        <p>Thứ Hai: Đóng Cửa</p>
+                                        <p>Thứ Ba - Thứ Tư: 9:AM - 10:PM</p>
+                                        <p>Thứ Năm - Thứ Sáu: 9:AM - 10:PM</p>
+                                        <p>Thứ Bảy - Chủ Nhật: 5:PM - 10:PM</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer bottom -->
+            <div class="footer__bottom">
+                <p>Copyright &copy; 2020 All Rights Reserved</p>
+                <p>Design By Thành Nam</p>
+                <a class="back-to-top" href="#"><i class="fas fa-angle-up"></i></a>
+            </div>
+        </footer>
+        <!-- end footer -->
+    </div>
+</body>
+
+</html>
