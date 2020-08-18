@@ -7,8 +7,7 @@
 /*----------------------------------------------
     IMPORT FILES
 -----------------------------------------------*/
-/* @import url(/css/animation.css); */
-
+@import url(/css/animation.css);
 /*----------------------------------------------
   Container fluid
   ---------------------------------------------*/
@@ -52,7 +51,6 @@
   width: 5rem;
   height: 5rem;
 
-  animation: topToBottom 1 2s;
   background: url(../images/Vector-Smart-Object.png) no-repeat;
 }
 
@@ -62,31 +60,11 @@
 }
 
 .container-fluid__content .title {
-  position: relative;
-
   font-size: 7.2rem;
   height: 17rem;
 
   color: var(--yellow-color);
   font-family: "Pacifico", cursive;
-}
-
-.title .title-left {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-
-  animation: leftToRight 1 3s;
-}
-
-.title .title-right {
-  position: absolute;
-  right: 50%;
-  transform: translateX(50%);
-  bottom: 0;
-
-  animation: rightToLeft 1 3s;
 }
 
 a.btn {

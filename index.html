@@ -11,13 +11,6 @@
     <!-- Reset layout -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
 
-    <!-- Main StyleSheet CSS -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-
     <!-- Animate CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 
@@ -26,6 +19,13 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+    <!-- Main StyleSheet CSS -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
@@ -102,11 +102,11 @@
         <!-- container-fluid -->
         <section class="container-fluid">
             <div class="grid wide container-fluid__content">
-                <p>Premium</p>
-                <p class="animate__animated animate__fadeInLeft">Quality</p>
+                <p class="animate__animated animate__bounce">Premium</p>
+                <p class="animate__animated animate__bounce">Quality</p>
                 <div class="title">
-                    <p class="title-left">Thành Nam</p>
-                    <p class="title-right">Restaurant</p>
+                    <p class="animate__animated animate__fadeInLeft animate__slow">Thành Nam</p>
+                    <p class="animate__animated animate__fadeInRight animate__slow">Restaurant</p>
                 </div>
                 <a class="btn btn-color" href="#">Đặt Bàn</a>
             </div>
@@ -117,31 +117,36 @@
         <section class="about">
             <div class="grid wide">
                 <div class="row">
-                    <div class="col l-3 m-3 s-0 about__img">
+                    <div class="col l-3 m-3 s-0 about__img animate__animated animate__fadeInLeft">
                         <img src="images/about-01.jpg" alt="about images">
                     </div>
                     <div class="col l-6 m-6 s-12 about__desc">
-                        <div class="about__desc-intro">
-                            <h2 class="animate__animated animate__fadeInLeft">Chào Mừng Bạn Đến Với <br> <span>Thành Nam
-                                    Restaurant</span></h2>
-                        </div>
-                        <div class="about__desc-details">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores commodi sed fuga dolores
-                                veritatis
-                                ipsa reiciendis, dignissimos nihil accusantium? Quam natus distinctio dolore praesentium
-                                excepturi!
-                                Dolore necessitatibus corporis assumenda adipisci.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ullam sint dolor quas
-                                quidem
-                                accusamus quos nam nesciunt accusantium qui autem, molestias cupiditate quam assumenda
-                                ea
-                                reprehenderit quae laudantium vel.</p>
-                        </div>
-                        <div class="about__desc-book">
-                            <a class="btn" href="#">Đặt Bàn</a>
+                        <div class="animate__animated animate__fadeInUpBig">
+                            <div class="about__desc-intro">
+                                <h2>Chào Mừng Bạn Đến Với <br> <span>Thành Nam
+                                        Restaurant</span></h2>
+                            </div>
+                            <div class="about__desc-details">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores commodi sed fuga
+                                    dolores
+                                    veritatis
+                                    ipsa reiciendis, dignissimos nihil accusantium? Quam natus distinctio dolore
+                                    praesentium
+                                    excepturi!
+                                    Dolore necessitatibus corporis assumenda adipisci.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ullam sint dolor quas
+                                    quidem
+                                    accusamus quos nam nesciunt accusantium qui autem, molestias cupiditate quam
+                                    assumenda
+                                    ea
+                                    reprehenderit quae laudantium vel.</p>
+                            </div>
+                            <div class="about__desc-book">
+                                <a class="btn" href="#">Đặt Bàn</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col l-3 m-3 s-0 about__img">
+                    <div class="col l-3 m-3 s-0 about__img animate__animated animate__fadeInRight">
                         <img src="images/about-02.jpg" alt="about images">
                     </div>
                 </div>
@@ -150,7 +155,7 @@
         <!-- end about us-->
 
         <!-- qoute -->
-        <section class="qoute">
+        <section class="qoute animate__animated animate__fadeInUp">
             <div class="qoute__details">
                 <h3>" If you're not the one cooking, stay out of the way and compliment the chef. "</h3>
                 <h3>Michael Strahan</h3>
@@ -160,12 +165,12 @@
 
         <!-- special menu -->
         <section class="grid wide">
-            <header class="headline">
+            <header class="headline animate__animated animate__fadeInDown">
                 <h3>Special Menu</h3>
                 <p>Hãy chọn những món ăn mà bạn cảm thấy thích !!!</p>
             </header>
             <div class="row">
-                <div class="col l-3 m-12 s-12">
+                <div class="col l-3 m-12 s-12 animate__animated animate__fadeInTopLeft">
                     <ul class="navbar-menu">
                         <li><a class="active" href="#">Tất Cả</a></li>
                         <li><a href="#">Thức Uống</a></li>
@@ -173,7 +178,7 @@
                         <li><a href="#">Bữa Tối</a></li>
                     </ul>
                 </div>
-                <div class="col l-9 m-12 s-12">
+                <div class="col l-9 m-12 s-12 animate__animated animate__fadeInTopRight">
                     <div class="row fixed-row--margin">
                         <div class="col l-4 m-6 s-12">
                             <div class="menu-items">
