@@ -173,9 +173,19 @@ a.btn:hover {
 /*----------------------------------------------
   Special Menu
   ---------------------------------------------*/
+.special-menu {
+  background: url(../images/SpecialMenu-bg-pc.jpg) no-repeat;
+  background-size: 100% 100%;
+  margin-top: 6rem;
+}
+
+.special-menu__content {
+  padding: 0 3rem 7rem;
+}
+
 .headline {
   font-size: 2rem;
-  padding: 5rem 0;
+  padding: 7rem 0 2rem;
   text-align: center;
 }
 
@@ -224,6 +234,7 @@ a.btn:hover {
   width: 100%;
   height: auto;
 }
+
 .info {
   position: absolute;
   bottom: 0;
@@ -251,7 +262,7 @@ a.btn:hover {
   color: var(--white-color);
 
   overflow: hidden;
-  padding: 1.5rem;
+  padding: 1rem;
 }
 
 .info__details h4:nth-child(3) {
@@ -332,6 +343,7 @@ a.carousel-control-next {
 
   padding: 0.5rem 3rem;
 }
+
 .carousel-control-previous i,
 .carousel-control-next i {
   font-size: 3rem;

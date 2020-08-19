@@ -62,10 +62,19 @@
   /*---------------------
   Special Menu
   ----------------------*/
+  .special-menu {
+    background: url(../images/SpecialMenu-bg-tablet.jpg) no-repeat;
+    background-size: cover;
+  }
+
+  .headline {
+    padding: 3rem 0 0;
+  }
+
   .navbar-menu {
     display: flex;
     justify-content: center;
-    padding: 4rem 0;
+    padding: 0 0 3rem;
   }
 
   .navbar-menu > li {
@@ -94,15 +103,22 @@
     width: 100%;
   }
 
-  :root {
-    --animate-repeat: 0;
-  }
   /*--------------------
     Navbar 
    --------------------*/
   .header {
     border-radius: unset;
   }
+
+  .navbar__left {
+    width: 10rem;
+    height: 5rem;
+  }
+
+  .navbar-btn {
+    margin-right: 1rem;
+  }
+
   .navbar-list {
     position: absolute;
     top: 35%;
@@ -156,11 +172,18 @@
     font-size: unset;
     line-height: unset;
   }
+
   /*---------------------
     Special Menu
   ----------------------*/
+  .special-menu {
+    background: url(../images/SpecialMenu-bg-mobile.jpg) repeat-y;
+    background-size: 100%;
+  }
+
   .headline {
     font-size: unset;
+    padding: 8rem 0 3rem;
   }
 
   .headline h2 {
@@ -169,7 +192,16 @@
   }
 
   .navbar-menu {
+    width: 70%;
+
     padding: 2rem 0;
+    margin: 0 auto;
+
+    text-align: center;
+  }
+
+  .padding-items--mobile {
+    padding: 0 2rem;
   }
 
   .info__details {
