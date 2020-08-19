@@ -216,7 +216,9 @@ nav.row {
   padding: 2rem 3rem;
 }
 
-.footer__top-right > i {
+.footer__top-right--items {
+  display: inline-table;
+
   width: 4rem;
   height: 4rem;
 
@@ -273,6 +275,7 @@ nav.row {
 .footer__mid-items--headline h3 {
   position: relative;
   padding: 0 0 2rem;
+  white-space: nowrap;
 }
 
 .footer__mid-items--headline h3::after {
@@ -355,7 +358,7 @@ a.btn-footer:hover {
 
 /* footer bottom */
 .footer__bottom {
-  padding: 3rem 0;
+  padding: 1rem 0;
   text-align: center;
 
   color: var(--white-color);

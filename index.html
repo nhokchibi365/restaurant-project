@@ -13,6 +13,7 @@
 
     <!-- Animate CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -100,15 +101,15 @@
         <!-- end header -->
 
         <!-- container-fluid -->
-        <section class="container-fluid">
+        <section class="container-fluid" id="back">
             <div class="grid wide container-fluid__content">
-                <p class="animate__animated animate__bounce">Premium</p>
-                <p class="animate__animated animate__bounce">Quality</p>
+                <p class="animate__animated animate__fadeInDown">Premium</p>
+                <p class="animate__animated animate__bounceInDown">Quality</p>
                 <div class="title">
                     <p class="animate__animated animate__fadeInLeft animate__slow">Thành Nam</p>
                     <p class="animate__animated animate__fadeInRight animate__slow">Restaurant</p>
                 </div>
-                <a class="btn btn-color" href="#">Đặt Bàn</a>
+                <a class="btn btn-color animate__animated animate__fadeInUp" href="#">Đặt Bàn</a>
             </div>
         </section>
         <!-- end container-fluid-->
@@ -117,36 +118,35 @@
         <section class="about">
             <div class="grid wide">
                 <div class="row">
-                    <div class="col l-3 m-3 s-0 about__img animate__animated animate__fadeInLeft">
+                    <div class="col l-3 m-3 s-0 about__img" data-aos="slide-right" data-aos-offset="300">
                         <img src="images/about-01.jpg" alt="about images">
                     </div>
-                    <div class="col l-6 m-6 s-12 about__desc">
-                        <div class="animate__animated animate__fadeInUpBig">
-                            <div class="about__desc-intro">
-                                <h2>Chào Mừng Bạn Đến Với <br> <span>Thành Nam
-                                        Restaurant</span></h2>
-                            </div>
-                            <div class="about__desc-details">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores commodi sed fuga
-                                    dolores
-                                    veritatis
-                                    ipsa reiciendis, dignissimos nihil accusantium? Quam natus distinctio dolore
-                                    praesentium
-                                    excepturi!
-                                    Dolore necessitatibus corporis assumenda adipisci.</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ullam sint dolor quas
-                                    quidem
-                                    accusamus quos nam nesciunt accusantium qui autem, molestias cupiditate quam
-                                    assumenda
-                                    ea
-                                    reprehenderit quae laudantium vel.</p>
-                            </div>
-                            <div class="about__desc-book">
-                                <a class="btn" href="#">Đặt Bàn</a>
-                            </div>
+                    <div class="col l-6 m-6 s-12 about__desc" data-aos="fade-up" data-aos-offset="400"
+                        data-aos-delay="300">
+                        <div class="about__desc-intro">
+                            <h2>Chào Mừng Bạn Đến Với <br> <span>Thành Nam
+                                    Restaurant</span></h2>
+                        </div>
+                        <div class="about__desc-details">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores commodi sed fuga
+                                dolores
+                                veritatis
+                                ipsa reiciendis, dignissimos nihil accusantium? Quam natus distinctio dolore
+                                praesentium
+                                excepturi!
+                                Dolore necessitatibus corporis assumenda adipisci.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ullam sint dolor quas
+                                quidem
+                                accusamus quos nam nesciunt accusantium qui autem, molestias cupiditate quam
+                                assumenda
+                                ea
+                                reprehenderit quae laudantium vel.</p>
+                        </div>
+                        <div class="about__desc-book">
+                            <a class="btn" href="#">Đặt Bàn</a>
                         </div>
                     </div>
-                    <div class="col l-3 m-3 s-0 about__img animate__animated animate__fadeInRight">
+                    <div class="col l-3 m-3 s-0 about__img" data-aos="slide-left" data-aos-offset="300">
                         <img src="images/about-02.jpg" alt="about images">
                     </div>
                 </div>
@@ -155,8 +155,8 @@
         <!-- end about us-->
 
         <!-- qoute -->
-        <section class="qoute animate__animated animate__fadeInUp">
-            <div class="qoute__details">
+        <section class="qoute" data-aos="fade-up">
+            <div class="qoute__details" data-aos="flip-up" data-aos-offset="250">
                 <h3>" If you're not the one cooking, stay out of the way and compliment the chef. "</h3>
                 <h3>Michael Strahan</h3>
             </div>
@@ -165,12 +165,12 @@
 
         <!-- special menu -->
         <section class="grid wide">
-            <header class="headline animate__animated animate__fadeInDown">
-                <h3>Special Menu</h3>
+            <header class="headline" data-aos="flip-down">
+                <h2>Special Menu</h2>
                 <p>Hãy chọn những món ăn mà bạn cảm thấy thích !!!</p>
             </header>
             <div class="row">
-                <div class="col l-3 m-12 s-12 animate__animated animate__fadeInTopLeft">
+                <div class="col l-3 m-12 s-12" data-aos="fade-right">
                     <ul class="navbar-menu">
                         <li><a class="active" href="#">Tất Cả</a></li>
                         <li><a href="#">Thức Uống</a></li>
@@ -178,10 +178,10 @@
                         <li><a href="#">Bữa Tối</a></li>
                     </ul>
                 </div>
-                <div class="col l-9 m-12 s-12 animate__animated animate__fadeInTopRight">
-                    <div class="row fixed-row--margin">
+                <div class="col l-9 m-12 s-12" data-aos="fade-left">
+                    <div class=" row fixed-row--margin">
                         <div class="col l-4 m-6 s-12">
-                            <div class="menu-items">
+                            <div class="menu-items" data-aos="flip-down">
                                 <img src="images/img-01.jpg" alt="drink 1">
                                 <div class="info">
                                     <div class="info__details">
@@ -193,7 +193,7 @@
                             </div>
                         </div>
                         <div class="col l-4 m-6 s-12">
-                            <div class="menu-items">
+                            <div class="menu-items" data-aos="flip-down">
                                 <img src="images/img-02.jpg" alt="drink 2">
                                 <div class="info">
                                     <div class="info__details">
@@ -205,7 +205,7 @@
                             </div>
                         </div>
                         <div class="col l-4 m-6 s-12">
-                            <div class="menu-items">
+                            <div class="menu-items" data-aos="flip-down">
                                 <img src="images/img-03.jpg" alt="drink 3">
                                 <div class="info">
                                     <div class="info__details">
@@ -217,8 +217,7 @@
                             </div>
                         </div>
                         <div class="col l-4 m-6 s-12">
-                            <div class="menu-items">
-                                <img src="images/img-04.jpg" alt="lunch 1">
+                            <div class="menu-items" data-aos="flip-down"> <img src="images/img-04.jpg" alt="lunch 1">
                                 <div class="info">
                                     <div class="info__details">
                                         <h4>Special Lunch 1</h4>
@@ -229,8 +228,7 @@
                             </div>
                         </div>
                         <div class="col l-4 m-6 s-12">
-                            <div class="menu-items">
-                                <img src="images/img-05.jpg" alt="lunch 2">
+                            <div class="menu-items" data-aos="flip-down"> <img src="images/img-05.jpg" alt="lunch 2">
                                 <div class="info">
                                     <div class="info__details">
                                         <h4>Special Lunch 2</h4>
@@ -241,8 +239,7 @@
                             </div>
                         </div>
                         <div class="col l-4 m-6 s-12">
-                            <div class="menu-items">
-                                <img src="images/img-06.jpg" alt="lunch 3">
+                            <div class="menu-items" data-aos="flip-down"> <img src="images/img-06.jpg" alt="lunch 3">
                                 <div class="info">
                                     <div class="info__details">
                                         <h4>Special Lunch 3</h4>
@@ -253,8 +250,7 @@
                             </div>
                         </div>
                         <div class="col l-4 m-6 s-12">
-                            <div class="menu-items">
-                                <img src="images/img-07.jpg" alt="dinner 1">
+                            <div class="menu-items" data-aos="flip-down"> <img src="images/img-07.jpg" alt="dinner 1">
                                 <div class="info">
                                     <div class="info__details">
                                         <h4>Special Dinner 1</h4>
@@ -265,8 +261,7 @@
                             </div>
                         </div>
                         <div class="col l-4 m-6 s-12">
-                            <div class="menu-items">
-                                <img src="images/img-08.jpg" alt="dinner 2">
+                            <div class="menu-items" data-aos="flip-down"> <img src="images/img-08.jpg" alt="dinner 2">
                                 <div class="info">
                                     <div class="info__details">
                                         <h4>Special Dinner 2</h4>
@@ -277,8 +272,7 @@
                             </div>
                         </div>
                         <div class="col l-4 m-6 s-12">
-                            <div class="menu-items">
-                                <img src="images/img-09.jpg" alt="dinner 3">
+                            <div class="menu-items" data-aos="flip-down"> <img src="images/img-09.jpg" alt="dinner 3">
                                 <div class="info">
                                     <div class="info__details">
                                         <h4>Special Dinner 3</h4>
@@ -296,27 +290,27 @@
 
         <!-- garelly -->
         <section class="grid wide">
-            <header class="headline">
-                <h3>Gallery</h3>
+            <header class="headline" data-aos="flip-down">
+                <h2>Gallery</h2>
                 <p>Hãy chiêm ngưỡng những món ăn tuyệt đẹp !!!</p>
             </header>
             <div class="row">
-                <div class="col l-4 m-6 s-12 garelly-items">
+                <div class="col l-4 m-6 s-12 garelly-items" data-aos="flip-right">
                     <img src="images/gallery-img-01.jpg" alt="img 1">
                 </div>
-                <div class="col l-4 m-6 s-6 garelly-items">
+                <div class="col l-4 m-6 s-6 garelly-items" data-aos="flip-down">
                     <img src="images/gallery-img-02.jpg" alt="img 2">
                 </div>
-                <div class="col l-4 m-6 s-6 garelly-items">
+                <div class="col l-4 m-6 s-6 garelly-items" data-aos="flip-left">
                     <img src="images/gallery-img-03.jpg" alt="img 3">
                 </div>
-                <div class="col l-4 m-6 s-12 garelly-items">
+                <div class="col l-4 m-6 s-12 garelly-items" data-aos="flip-right">
                     <img src="images/gallery-img-04.jpg" alt="img 4">
                 </div>
-                <div class="col l-4 m-6 s-6 garelly-items">
+                <div class="col l-4 m-6 s-6 garelly-items" data-aos="flip-down">
                     <img src="images/gallery-img-05.jpg" alt="img 5">
                 </div>
-                <div class="col l-4 m-6 s-6 garelly-items">
+                <div class="col l-4 m-6 s-6 garelly-items" data-aos="flip-left">
                     <img src="images/gallery-img-06.jpg" alt="img 6">
                 </div>
             </div>
@@ -326,11 +320,11 @@
         <!-- customer reviews -->
         <section class="grid wide customer-reviews">
             <div class="row">
-                <header class="col l-12 m-12 s-12 headline">
-                    <h3>Nhận Xét Của Khách Hàng</h3>
+                <header class="col l-12 m-12 s-12 headline" data-aos="flip-down">
+                    <h2>Nhận Xét Của Khách Hàng</h2>
                     <p>Hãy xem khách hàng nhận xét gì về chúng tôi !!!</p>
                 </header>
-                <div class="col l-12 m-12 s-12 reviews">
+                <div class="col l-12 m-12 s-12 reviews" data-aos="flip-up">
                     <div class="row carousel-items">
                         <div class="col l-12 m-12 s-0 carousel-items__img">
                             <img src="images/quotations-button.png" alt="quotations-button">
@@ -362,24 +356,30 @@
             <div class="footer__top">
                 <div class="grid wide">
                     <div class="row">
-                        <div class="col l-6 m-6 s-0">
+                        <div class="col l-6 m-6 s-0" data-aos="slide-right" data-aos-offset="300">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9356596756593!2d106.6756248153521!3d10.816235861414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e19559e523%3A0x8e4133bdb1373cc9!2zMzcxIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1597454228030!5m2!1svi!2s"
                                 width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""
                                 aria-hidden="false" tabindex="0"></iframe>
                         </div>
-                        <div class="col l-6 m-6 s-0">
+                        <div class="col l-6 m-6 s-0" data-aos="slide-left" data-aos-offset="300">
                             <div class="row">
                                 <div class="col l-12 m-12 footer__top-right">
-                                    <i class="fas fa-phone-volume"></i>
+                                    <div class="footer__top-right--items">
+                                        <i class="fas fa-phone-volume"></i>
+                                    </div>
                                     <p><span>Phone</span><br>+84 1944-183-710</p>
                                 </div>
                                 <div class="col l-12 m-12 footer__top-right">
-                                    <i class="far fa-envelope"></i>
+                                    <div class="footer__top-right--items">
+                                        <i class="far fa-envelope"></i>
+                                    </div>
                                     <p><span>Email</span><br>nhokchibi365@gmail.com</p>
                                 </div>
                                 <div class="col l-12 m-12 footer__top-right">
-                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div class="footer__top-right--items">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
                                     <p><span>Location</span><br>371 Nguyễn Kiệm, P.3, Q.Gò Vấp</p>
                                 </div>
                             </div>
@@ -389,7 +389,7 @@
             </div>
 
             <!-- footer mid -->
-            <div class="footer__mid">
+            <div class="footer__mid" data-aos="fade-up">
                 <div class="footer__mid-bg">
                     <div class="grid wide">
                         <div class="footer__mid-content">
@@ -463,11 +463,25 @@
             <div class="footer__bottom">
                 <p>Copyright &copy; 2020 All Rights Reserved</p>
                 <p>Design By Thành Nam</p>
-                <a class="back-to-top" href="#"><i class="fas fa-angle-up"></i></a>
+                <a class="back-to-top" href="#back"><i class="fas fa-angle-up"></i></a>
             </div>
         </footer>
         <!-- end footer -->
     </div>
+
+    <!-- Animation JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            delay: 50,
+            duration: 1000
+        });
+    </script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>

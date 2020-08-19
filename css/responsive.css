@@ -93,9 +93,16 @@
   .navbar-moble-tablet {
     width: 100%;
   }
+
+  :root {
+    --animate-repeat: 0;
+  }
   /*--------------------
     Navbar 
    --------------------*/
+  .header {
+    border-radius: unset;
+  }
   .navbar-list {
     position: absolute;
     top: 35%;
@@ -114,24 +121,53 @@
    ---------------------*/
   .container-fluid__content .title {
     font-size: 6rem;
-    height: 15rem;
+    height: 9rem;
   }
 
-  .title .title-left {
-    animation: none;
-    left: 50%;
-    transform: translateX(-50%);
+  .container-fluid__content > p:first-child {
+    font-size: 4.2rem;
   }
 
-  .title .title-right {
-    animation: none;
-    right: 50%;
-    transform: translateX(50%);
+  .container-fluid__content > p:first-child::before {
+    top: -3.3rem;
+    right: 1.5rem;
+  }
+
+  .container-fluid__content > p:nth-child(2) {
+    font-size: 3.2rem;
+  }
+
+  a.btn {
+    padding: 1rem 3rem;
+  }
+
+  .container-fluid__content > .title {
+    font-size: 4rem;
   }
 
   /*---------------------
+    Qoute
+  ----------------------*/
+  .qoute {
+    padding: 6rem 0;
+  }
+
+  .qoute__details h3 {
+    font-size: unset;
+    line-height: unset;
+  }
+  /*---------------------
     Special Menu
   ----------------------*/
+  .headline {
+    font-size: unset;
+  }
+
+  .headline h2 {
+    font-size: 2.4rem;
+    padding: 1rem 0;
+  }
+
   .navbar-menu {
     padding: 2rem 0;
   }
@@ -150,7 +186,8 @@
   /*----------------------
   Customer Reviews
   -----------------------*/
-  a.btn {
+  a.carousel-control-previous,
+  a.carousel-control-next {
     display: none;
   }
 

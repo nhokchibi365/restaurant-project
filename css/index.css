@@ -8,6 +8,7 @@
     IMPORT FILES
 -----------------------------------------------*/
 @import url(/css/animation.css);
+
 /*----------------------------------------------
   Container fluid
   ---------------------------------------------*/
@@ -50,7 +51,7 @@
 
   width: 5rem;
   height: 5rem;
-
+  animation: bounce 1 2s;
   background: url(../images/Vector-Smart-Object.png) no-repeat;
 }
 
@@ -70,7 +71,7 @@
 a.btn {
   display: inline-block;
   padding: 1.5rem 5rem;
-  border-radius: 2rem;
+  border-radius: 3rem;
   border: 0.3rem solid var(--primary-color);
 
   color: var(--primary-color);
@@ -124,10 +125,7 @@ a.btn:hover {
 
 .about__desc-details {
   text-align: justify;
-}
-
-.about__desc-details p {
-  padding: 0.5rem 0;
+  padding: 0.5rem 2rem;
 }
 
 .about__desc-book {
@@ -157,10 +155,13 @@ a.btn:hover {
   width: 100%;
   height: 100%;
 }
-.qoute__details h3 {
-  position: relative;
-  z-index: 2;
 
+.qoute__details {
+  position: relative;
+  z-index: 1;
+}
+
+.qoute__details h3 {
   font-size: 3rem;
   line-height: 3.6rem;
 
@@ -173,12 +174,12 @@ a.btn:hover {
   Special Menu
   ---------------------------------------------*/
 .headline {
-  font-size: 2.4rem;
+  font-size: 2rem;
   padding: 5rem 0;
   text-align: center;
 }
 
-.headline h3 {
+.headline h2 {
   font-size: 3rem;
   padding: 2rem 0;
 }
@@ -266,7 +267,7 @@ a.btn:hover {
   Garelly
   ---------------------------------------------*/
 .garelly-items {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .garelly-items img {
@@ -321,7 +322,7 @@ a.carousel-control-previous {
   top: 50%;
   left: 5%;
 
-  padding: 1.5rem 3rem;
+  padding: 0.5rem 3rem;
 }
 
 a.carousel-control-next {
@@ -329,7 +330,7 @@ a.carousel-control-next {
   top: 50%;
   right: 5%;
 
-  padding: 1.5rem 3rem;
+  padding: 0.5rem 3rem;
 }
 .carousel-control-previous i,
 .carousel-control-next i {
