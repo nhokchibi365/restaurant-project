@@ -238,10 +238,11 @@
   /*----------------------
   Customer Reviews
   -----------------------*/
-  .customer-reviews .slick-prev,
-  .customer-reviews .slick-next {
+  .slick-prev,
+  .slick-next {
     display: none;
   }
+
   /*---------------------
     Footer
    ---------------------*/
