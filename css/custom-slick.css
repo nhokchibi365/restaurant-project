@@ -1,12 +1,21 @@
 .qoute .slick-list.draggable {
   z-index: 2;
 }
+
 .slick-list.draggable:focus {
   outline: none;
 }
 
 .slick-dots li button:before {
   font-size: 2rem;
+}
+
+.slick-dots li button:before {
+  color: var(--primary-color);
+}
+
+.slick-dots li.slick-active button:before {
+  color: var(--primary-color);
 }
 
 .customer-reviews .slick-prev,
