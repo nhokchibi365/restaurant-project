@@ -12,7 +12,7 @@
   top: 0;
   right: 0;
   left: 0;
-  z-index: 2;
+  z-index: 10;
 }
 
 /* ------------------------------------
@@ -116,7 +116,7 @@ nav.row {
  ------------------------------------- */
 .nav label > i {
   transform: rotate(0);
-  transition: transform 1s;
+  transition: transform 0.5s;
 }
 
 .nav label > i:hover {
@@ -386,8 +386,8 @@ a.btn-footer:hover {
   padding: 1rem 0;
 }
 
-.back-to-top {
-  display: block;
+#go-to-top {
+  display: none;
 
   position: fixed;
   right: 1.5rem;

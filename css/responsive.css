@@ -87,6 +87,10 @@
   }
 
   /*---------------------
+    Customer Reviews
+   ---------------------*/
+
+  /*---------------------
     Footer
    ---------------------*/
 }
@@ -218,10 +222,6 @@
   /*----------------------
   Customer Reviews
   -----------------------*/
-  a.carousel-control-previous,
-  a.carousel-control-next {
-    display: none;
-  }
 
   /*---------------------
     Footer

@@ -7,7 +7,9 @@
 /*----------------------------------------------
     IMPORT FILES
 -----------------------------------------------*/
-@import url(/css/animation.css);
+@import url(../css/base.css);
+@import url(../css/grid.css);
+@import url(../css/animation.css);
 
 /*----------------------------------------------
   Container fluid
@@ -51,7 +53,7 @@
 
   width: 5rem;
   height: 5rem;
-  animation: bounce 1 2s;
+  animation: bounce 1 2s 1.1s;
   background: url(../images/Vector-Smart-Object.png) no-repeat;
 }
 
@@ -82,8 +84,8 @@ a.btn {
     var(--primary-color) 50%,
     transparent 50%
   );
-
-  transition: background-position 0.5s, color 0.1s ease;
+  animation: fadeInUp 1 2s;
+  transition: all 0.5s, color 0.1s ease;
 }
 
 a.btn-color {
@@ -167,6 +169,7 @@ a.btn:hover {
 
   padding: 1rem 0;
   color: var(--white-color);
+  text-transform: unset;
   text-align: center;
 }
 
@@ -311,6 +314,16 @@ a.btn:hover {
   margin: 0 auto;
 }
 
+.carousel-items__img {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-items__img img {
+  height: 15vh;
+}
+
 .carousel-items__info {
   padding: 0 15%;
 }
@@ -326,25 +339,4 @@ a.btn:hover {
   text-align: justify;
   padding: 0 0 1rem;
   font-size: 1.6rem;
-}
-
-a.carousel-control-previous {
-  position: absolute;
-  top: 50%;
-  left: 5%;
-
-  padding: 0.5rem 3rem;
-}
-
-a.carousel-control-next {
-  position: absolute;
-  top: 50%;
-  right: 5%;
-
-  padding: 0.5rem 3rem;
-}
-
-.carousel-control-previous i,
-.carousel-control-next i {
-  font-size: 3rem;
 }
