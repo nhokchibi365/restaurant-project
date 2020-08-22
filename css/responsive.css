@@ -238,8 +238,8 @@
   /*----------------------
   Customer Reviews
   -----------------------*/
-  .slick-prev,
-  .slick-next {
+  .customer-reviews .slick-prev,
+  .customer-reviews .slick-next {
     display: none;
   }
 
