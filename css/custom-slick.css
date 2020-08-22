@@ -26,11 +26,11 @@
 }
 
 .customer-reviews .slick-prev {
-  transform: translate(50%, -50%);
+  left: -5rem;
 }
 
 .customer-reviews .slick-next {
-  transform: translate(-50%, -50%);
+  right: -5rem;
 }
 
 .customer-reviews .slick-prev::before,
