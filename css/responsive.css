@@ -239,9 +239,7 @@
   Customer Reviews
   -----------------------*/
   .customer-reviews .slick-prev,
-  .customer-reviews .slick-next,
-  .customer-reviews .slick-prev::before,
-  .customer-reviews .slick-next::before {
+  .customer-reviews .slick-next {
     display: none;
   }
 
