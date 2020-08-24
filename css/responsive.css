@@ -38,6 +38,13 @@
   .footer__mid-items {
     margin-top: 3rem;
   }
+
+  /*--------------------------------------
+  About Us Page
+  --------------------------------------*/
+  .about-us-bg:nth-child(odd) .about-us__content {
+    flex-direction: column-reverse;
+  }
 }
 
 /*------------------------------------
@@ -143,7 +150,6 @@
 
   .navbar-list li:hover {
     background: unset;
-    border-bottom: 0.1rem solid var(--primary-color);
   }
 
   .navbar-list a {
@@ -266,5 +272,12 @@
     flex: 0 0 50%;
     max-width: 50%;
     margin-left: 25%;
+  }
+
+  /*--------------------------------------
+    Gallery Page
+    --------------------------------------*/
+  .header-page {
+    font-size: 4rem;
   }
 }

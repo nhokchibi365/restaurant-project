@@ -49,7 +49,7 @@ nav.row {
   position: relative;
 }
 
-.navbar__right > ul > li > a {
+.navbar__right a {
   display: block;
   font-weight: 600;
 
@@ -62,7 +62,7 @@ nav.row {
   transition: all 0.3s;
 }
 
-.navbar__right > ul > li a.active {
+a.active {
   color: var(--white-color);
   background: var(--primary-color);
 }
@@ -96,6 +96,7 @@ nav.row {
 .sub-menu__content > li > a {
   display: block;
   padding: 1.5rem 2rem;
+  border-radius: unset;
   color: var(--primary-color);
 }
 
@@ -193,7 +194,6 @@ nav.row {
   display: block;
 
   padding: 2rem 0;
-  margin-left: 3rem;
 
   color: var(--black-color);
 
@@ -206,15 +206,13 @@ nav.row {
 }
 
 .navbar-link i {
-  margin-right: 2rem;
+  margin: 0 2rem;
 
   width: 2rem;
   height: 2rem;
 
   font-size: 2rem;
   line-height: 2rem;
-
-  color: var(--primary-color);
 }
 
 /* ------------------------------------

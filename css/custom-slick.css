@@ -8,9 +8,6 @@
 
 .slick-dots li button:before {
   font-size: 2rem;
-}
-
-.slick-dots li button:before {
   color: var(--primary-color);
 }
 

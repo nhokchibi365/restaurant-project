@@ -3,6 +3,7 @@
 -----------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300;1,700&display=swap");
 
 /*----------------------------------------------
     IMPORT FILES
@@ -188,7 +189,7 @@ a.btn:hover {
 
 .headline {
   font-size: 2rem;
-  padding: 7rem 0 2rem;
+  padding: 7rem 0 3rem;
   text-align: center;
 }
 
@@ -209,11 +210,11 @@ a.btn:hover {
 
   transition: all ease 0.3s;
 }
-
+/* 
 .navbar-menu a.active {
   color: var(--white-color);
   background: var(--primary-color);
-}
+} */
 
 .navbar-menu a:hover {
   color: var(--white-color);
@@ -339,4 +340,178 @@ a.btn:hover {
   text-align: justify;
   padding: 0 6vw 1rem;
   font-size: 1.6rem;
+}
+
+/*--------------------------------------
+  Gallery Page
+  --------------------------------------*/
+.container-fluid--bg {
+  background: url(../images/slider-01.jpg) no-repeat fixed;
+
+  width: 100%;
+  height: 75vh;
+
+  padding: 1rem 0;
+
+  position: relative;
+}
+
+.container-fluid--bg::before {
+  content: "";
+  background: var(--black-color);
+  opacity: 0.6;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.container-fluid--bg__content {
+  position: relative;
+  top: 40%;
+  z-index: 2;
+
+  line-height: 1.15;
+
+  text-align: center;
+  color: var(--white-color);
+}
+
+.header-page {
+  font-size: 7.2rem;
+  color: var(--yellow-color);
+  font-family: "Roboto", sans-serif;
+}
+
+.gallery {
+  justify-content: center;
+  align-items: center;
+}
+
+/*--------------------------------------
+  Chef Page
+  --------------------------------------*/
+.container-fluid--bg__about-us {
+  background: url(../images/slider-02.jpg) no-repeat;
+}
+/*  container-chef */
+.container-chef {
+  padding: 0 0 3rem;
+}
+
+.our-team {
+  text-align: center;
+  transition: all ease 0.3s;
+  margin-top: 3rem;
+}
+
+.our-team:hover {
+  box-shadow: 0 1rem 0.8rem var(--shadow-color);
+}
+
+.our-team .pic {
+  position: relative;
+  overflow: hidden;
+}
+
+.our-team .our-team__contact {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: all ease 0.5s;
+}
+
+.our-team:hover .our-team__contact {
+  opacity: 1;
+  visibility: visible;
+}
+
+.our-team .pic img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.our-team .pic::before,
+.our-team .pic::after {
+  content: "";
+
+  width: 200%;
+  height: 65%;
+
+  background: var(--light-blue-color);
+
+  position: absolute;
+  top: -100%;
+  left: -9%;
+
+  transform: rotate(56deg);
+  transition: all 0.5s ease;
+}
+
+.our-team .pic::after {
+  background: var(--light-blue-color);
+  top: auto;
+  left: auto;
+  bottom: -100%;
+  right: -9%;
+}
+
+.our-team:hover .pic::before {
+  top: 0;
+}
+
+.our-team:hover .pic::after {
+  bottom: 0;
+}
+
+.team-content {
+  padding: 1rem 0;
+}
+
+.team-content__name {
+  color: var(--primary-color);
+  padding: 1rem 0;
+  text-transform: uppercase;
+}
+
+.team-content__job {
+  color: var(--text-color);
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+/*--------------------------------------
+  About Us Page
+  --------------------------------------*/
+.container-fluid--bg__about-us {
+  background: url(../images/slider-03.jpg) no-repeat;
+}
+
+.about-us-bg {
+  background: url(../images/about-us-bg.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.about-us__content {
+  padding: 5rem;
+  align-items: center;
+}
+
+.about-us__content p {
+  padding: 1rem 0;
+}
+
+.about-us__img img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
 }
