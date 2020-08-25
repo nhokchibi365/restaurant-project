@@ -10,8 +10,7 @@ $(document).ready(function () {
     }
   });
   $("#go-to-top").click(function () {
-    $("html, body").animate(
-      {
+    $("html, body").animate({
         scrollTop: 0,
       },
       1500
@@ -20,6 +19,21 @@ $(document).ready(function () {
   });
 });
 
+var $root = $("html, body");
+$('a[href^="#"]').click(function () {
+  var href = $.attr(this, "href");
+
+  $root.animate({
+      scrollTop: $(href).offset().top,
+    },
+    1000,
+    function () {
+      window.location.hash = href;
+    }
+  );
+
+  return false;
+});
 /* ..............................................
         Special Menu
 ............................................... */
@@ -31,23 +45,7 @@ $(document).ready(function () {
     current.addClass("active");
   });
 })();
-var $root = $("html, body");
 
-$('a[href^="#"]').click(function () {
-  var href = $.attr(this, "href");
-
-  $root.animate(
-    {
-      scrollTop: $(href).offset().top,
-    },
-    1000,
-    function () {
-      window.location.hash = href;
-    }
-  );
-
-  return false;
-});
 /* ..............................................
         Animation
     ............................................... */
@@ -110,8 +108,7 @@ function bookingCheck() {
       if (willDelete) {
         swal(
           "Bạn đã đặt bàn thành công!",
-          "Cảm ơn bạn đã sử dụng dịch vụ của chúng tôi !",
-          {
+          "Cảm ơn bạn đã sử dụng dịch vụ của chúng tôi !", {
             icon: "success",
           }
         );
