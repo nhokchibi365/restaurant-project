@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thành Nam Restaurant - Thư Viện Ảnh</title>
+    <title>Thành Nam Restaurant - Đặt Bàn</title>
     <!-- Favicon -->
     <!-- <link rel="shortcut icon" href="NewBiz/img/favicon.png"> -->
 
     <!-- Reset layout -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+
 
     <!-- Animate CSS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -36,7 +37,6 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-
 </head>
 
 <body>
@@ -53,16 +53,16 @@
                         <ul>
                             <li><a href="index.html">Trang Chủ</a></li>
                             <li><a href="menu.html">Thực Đơn</a></li>
-                            <li><a href="book-a-table.html">Đặt Bàn</a></li>
+                            <li><a class="active" href="book-a-table.html">Đặt Bàn</a></li>
                             <li class="sub-menu"><a href="blog.html">Blog</a>
                             </li>
                             <li><a href="#go-to-contact">Liên Hệ</a></li>
                             <li class="sub-menu">
-                                <a class="active" href="javascript:;">Khác
+                                <a href="javascript:;">Khác
                                     <i class="fa fa-caret-down"></i>
                                 </a>
                                 <ul class="sub-menu__content">
-                                    <li><a class="active" href="gallery.html">Thư Viện Ảnh</a></li>
+                                    <li><a href="gallery.html">Thư Viện Ảnh</a></li>
                                     <li><a href="about-us.html">Về Chúng Tôi</a></li>
                                     <li><a href="chef.html">Đầu Bếp</a></li>
                                 </ul>
@@ -91,7 +91,8 @@
                             <li>
                                 <a class="navbar-link" href="menu.html"><i class="far fa-list-alt"></i>Thực Đơn</a>
                             </li>
-                            <li><a class="navbar-link" href="book-a-table.html"><i class="fas fa-chair"></i>Đặt Bàn</a>
+                            <li><a class="navbar-link active" href="book-a-table.html"><i class="fas fa-chair"></i>Đặt
+                                    Bàn</a>
                             </li>
                             <li><a class="navbar-link" href="blog.html"><i class="fas fa-blog"></i>Blog</a></li>
                             <li>
@@ -102,10 +103,10 @@
                             <li><a class="navbar-link" href="about-us.html"><i class="far fa-address-card"></i>Về Chúng
                                     Tôi</a>
                             </li>
-                            <li><a class="navbar-link active" href="gallery.html"><i class="far fa-image"></i>Thư Viện
-                                    Ảnh</a>
+                            <li><a class="navbar-link" href="gallery.html"><i class="far fa-image"></i>Thư Viện Ảnh</a>
                             </li>
-                            <li><a class="navbar-link" href="chef.html"><i class="fas fa-utensils"></i>Đầu Bếp</a></li>
+                            <li><a class="navbar-link" href="chef.html"><i class="fas fa-utensils"></i>Đầu
+                                    Bếp</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -113,172 +114,97 @@
         <!-- end header -->
 
         <!-- container-fluid -->
-        <section class="container-fluid--bg" id="goback">
+        <section class="container-fluid--bg container-fluid--bg__chef" id="goback">
             <div class="grid wide container-fluid--bg__content">
-                <h1 class="header-page" data-aos="fade-down">Thư Viện Ảnh</h1>
+                <h1 class="header-page" data-aos="fade-down">Đặt Bàn</h1>
             </div>
         </section>
         <!-- end container-fluid-->
 
-        <!-- garelly -->
+        <!-- book a table -->
         <section class="grid wide">
             <header class="headline">
-                <h2>Ảnh</h2>
+                <h2>Đặt Bàn</h2>
+                <p>Description here</p>
             </header>
-            <div class="row gallery">
-                <div class="col l-4 m-6 s-12 garelly-items" data-aos="flip-right">
-                    <a href="images/gallery-img-01.jpg" data-caption="Desciprtion here">
-                        <img src="images/gallery-img-01.jpg" alt="Gallery Images">
-                    </a>
+            <form action="javascript:void(0);" class="row book-a-table">
+                <div class="col l-6 m-6 s-12 book-a-table__input" data-aos="zoom-in">
+                    <h2>Đặt Bàn</h2>
+                    <div class="row">
+                        <div class="col l-12 m-12 s-12 booking__items">
+                            <label for="date">Chọn ngày (<span class="required">*</span>)</label>
+                            <input type="date" name="date" id="date" placeholder="Nhập ngày" required>
+                        </div>
+                        <div class="col l-12 m-12 s-12 booking__items">
+                            <label for="date">Chọn giờ(<span class="required">*</span>)</label>
+                            <select required>
+                                <option value="time-booking" selected>8:00 AM</option>
+                                <option value="time-booking">8:30 AM</option>
+                                <option value="time-booking">9:00 AM</option>
+                                <option value="time-booking">9:30 AM</option>
+                                <option value="time-booking">10:00 AM</option>
+                                <option value="time-booking">10:30 AM</option>
+                                <option value="time-booking">11:00 AM</option>
+                                <option value="time-booking">12:00 AM</option>
+                                <option value="time-booking">13:00</option>
+                                <option value="time-booking">13:30</option>
+                                <option value="time-booking">14:00</option>
+                                <option value="time-booking">14:30</option>
+                                <option value="time-booking">15:00</option>
+                                <option value="time-booking">16:00</option>
+                                <option value="time-booking">16:30</option>
+                                <option value="time-booking">17:00</option>
+                                <option value="time-booking">18:00</option>
+                                <option value="time-booking">19:00</option>
+                                <option value="time-booking">20:00</option>
+                                <option value="time-booking">20:30</option>
+                                <option value="time-booking">21:00</option>
+                                <option value="time-booking">21:30</option>
+                            </select>
+                        </div>
+                        <div class="col l-12 m-12 s-12 booking__items">
+                            <label for="date">Chọn số lượng người (<span class="required">*</span>)</label>
+                            <select required>
+                                <option value="numOfPerson" selected>1 người</option>
+                                <option value="numOfPerson">2 người</option>
+                                <option value="numOfPerson">3 người</option>
+                                <option value="numOfPerson">4 người</option>
+                                <option value="numOfPerson">5 người</option>
+                                <option value="numOfPerson">Trên 5 người</option>
+                                <option value="numOfPerson">Trên 10 người</option>
+                                <option value="numOfPerson">Trên 15 người</option>
+                                <option value="numOfPerson">Trên 25 người</option>
+                                <option value="numOfPerson">Trên 30 người</option>
+                                <option value="numOfPerson">Trên 35 người</option>
+                                <option value="numOfPerson">Trên 40 người</option>
+                                <option value="numOfPerson">Trên 50 người</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
-                <div class="col l-4 m-6 s-6 garelly-items" data-aos="flip-down">
-                    <a href="images/gallery-img-02.jpg" data-caption="Desciprtion here">
-                        <img src="images/gallery-img-02.jpg" alt="Gallery Images">
-                    </a>
+                <div class="col l-6 m-6 s-12 book-a-table__info" data-aos="zoom-in">
+                    <h2>Nhập thông tin liên hệ</h2>
+                    <div class="row">
+                        <div class="col l-12 m-12 s-12 booking__items">
+                            <label for="name">Nhập tên (<span class="required">*</span>)</label>
+                            <input type="text" name="name" id="name" placeholder="Nhập tên" required>
+                        </div>
+                        <div class="col l-12 m-12 s-12 booking__items">
+                            <label for="address">Nhập địa chỉ (<span class="required">*</span>)</label>
+                            <input type="text" name="address" id="address" placeholder="Nhập địa chỉ" required>
+                        </div>
+                        <div class="col l-12 m-12 s-12 booking__items">
+                            <label for="phone">Nhập số điện thoại (<span class="required">*</span>)</label>
+                            <input type="number" name="phone" id="phone" placeholder="Nhập số điện thoại" required>
+                        </div>
+                    </div>
                 </div>
-                <div class="col l-4 m-6 s-6 garelly-items" data-aos="flip-left">
-                    <a href="images/gallery-img-03.jpg" data-caption="Desciprtion here">
-                        <img src="images/gallery-img-03.jpg" alt="Gallery Images">
-                    </a>
+                <div class="col l-2 m-4 s-12 book-a-table__submit" data-aos="fade-up" data-aos-delay="300">
+                    <input type="submit" value="Đặt Bàn" onclick="bookingCheck()">
                 </div>
-                <div class="col l-4 m-6 s-12 garelly-items" data-aos="flip-right">
-                    <a href="images/gallery-img-04.jpg" data-caption="Desciprtion here">
-                        <img src="images/gallery-img-04.jpg" alt="Gallery Images">
-                    </a>
-                </div>
-                <div class="col l-4 m-6 s-6 garelly-items" data-aos="flip-down">
-                    <a href="images/gallery-img-05.jpg" data-caption="Desciprtion here">
-                        <img src="images/gallery-img-05.jpg" alt="Gallery Images">
-                    </a>
-                </div>
-                <div class="col l-4 m-6 s-6 garelly-items" data-aos="flip-left">
-                    <a href="images/gallery-img-06.jpg" data-caption="Desciprtion here">
-                        <img src="images/gallery-img-06.jpg" alt="Gallery Images">
-                    </a>
-                </div>
-                <div class="col l-4 m-6 s-12 garelly-items" data-aos="flip-right">
-                    <a href="images/gallery-img-07.jpg" data-caption="Desciprtion here">
-                        <img src="images/gallery-img-07.jpg" alt="Gallery Images">
-                    </a>
-                </div>
-                <div class="col l-4 m-6 s-6 garelly-items" data-aos="flip-down">
-                    <a href="images/gallery-img-08.jpg" data-caption="Desciprtion here">
-                        <img src="images/gallery-img-08.jpg" alt="Gallery Images">
-                    </a>
-                </div>
-                <div class="col l-4 m-6 s-6 garelly-items" data-aos="flip-left">
-                    <a href="images/gallery-img-09.jpg" data-caption="Desciprtion here">
-                        <img src="images/gallery-img-09.jpg" alt="Gallery Images">
-                    </a>
-                </div>
-                <div class="col l-4 m-6 s-12 garelly-items" data-aos="flip-right">
-                    <a href="images/gallery-img-10.jpg" data-caption="Desciprtion here">
-                        <img src="images/gallery-img-10.jpg" alt="Gallery Images">
-                    </a>
-                </div>
-                <div class="col l-4 m-6 s-6 garelly-items" data-aos="flip-down">
-                    <a href="images/gallery-img-11.jpg" data-caption="Desciprtion here">
-                        <img src="images/gallery-img-11.jpg" alt="Gallery Images">
-                    </a>
-                </div>
-                <div class="col l-4 m-6 s-6 garelly-items" data-aos="flip-left">
-                    <a href="images/gallery-img-12.jpg" data-caption="Desciprtion here">
-                        <img src="images/gallery-img-12.jpg" alt="Gallery Images">
-                    </a>
-                </div>
-                <div class="col l-4 m-6 s-12 garelly-items" data-aos="flip-right">
-                    <a href="images/gallery-img-13.jpg" data-caption="Desciprtion here">
-                        <img src="images/gallery-img-13.jpg" alt="Gallery Images">
-                    </a>
-                </div>
-                <div class="col l-4 m-6 s-6 garelly-items" data-aos="flip-down">
-                    <a href="images/gallery-img-14.jpg" data-caption="Desciprtion here">
-                        <img src="images/gallery-img-14.jpg" alt="Gallery Images">
-                    </a>
-                </div>
-                <div class="col l-4 m-6 s-6 garelly-items" data-aos="flip-left">
-                    <a href="images/gallery-img-15.jpg" data-caption="Desciprtion here">
-                        <img src="images/gallery-img-15.jpg" alt="Gallery Images">
-                    </a>
-                </div>
-                <div class="col l-4 m-6 s-12 garelly-items" data-aos="flip-right">
-                    <a href="images/gallery-img-16.jpg" data-caption="Desciprtion here">
-                        <img src="images/gallery-img-16.jpg" alt="Gallery Images">
-                    </a>
-                </div>
-                <div class="col l-4 m-6 s-6 garelly-items" data-aos="flip-down">
-                    <a href="images/gallery-img-24.jpg" data-caption="Desciprtion here">
-                        <img src="images/gallery-img-24.jpg" alt="Gallery Images">
-                    </a>
-                </div>
-                <div class="col l-4 m-6 s-6 garelly-items" data-aos="flip-left">
-                    <a href="images/gallery-img-20.jpg" data-caption="Desciprtion here">
-                        <img src="images/gallery-img-20.jpg" alt="Gallery Images">
-                    </a>
-                </div>
-                <div class="col l-4 m-6 s-12 garelly-items" data-aos="flip-right">
-                    <a href="images/gallery-img-19.jpg" data-caption="Desciprtion here">
-                        <img src="images/gallery-img-19.jpg" alt="Gallery Images">
-                    </a>
-                </div>
-                <div class="col l-4 m-6 s-6 garelly-items" data-aos="flip-down">
-                    <a href="images/gallery-img-17.jpg" data-caption="Desciprtion here">
-                        <img src="images/gallery-img-17.jpg" alt="Gallery Images">
-                    </a>
-                </div>
-                <div class="col l-4 m-6 s-6 garelly-items" data-aos="flip-left">
-                    <a href="images/gallery-img-21.jpg" data-caption="Desciprtion here">
-                        <img src="images/gallery-img-21.jpg" alt="Gallery Images">
-                    </a>
-                </div>
-                <div class="col l-4 m-6 s-6 garelly-items" data-aos="flip-down">
-                    <a href="images/gallery-img-25.jpg" data-caption="Desciprtion here">
-                        <img src="images/gallery-img-25.jpg" alt="Gallery Images">
-                    </a>
-                </div>
-                <div class="col l-4 m-6 s-12 garelly-items" data-aos="flip-right">
-                    <a href="images/gallery-img-22.jpg" data-caption="Desciprtion here">
-                        <img src="images/gallery-img-22.jpg" alt="Gallery Images">
-                    </a>
-                </div>
-                <div class="col l-4 m-6 s-6 garelly-items" data-aos="flip-left">
-                    <a href="images/gallery-img-18.jpg" data-caption="Desciprtion here">
-                        <img src="images/gallery-img-18.jpg" alt="Gallery Images">
-                    </a>
-                </div>
-                <div class="col l-4 m-6 s-6 garelly-items" data-aos="flip-down">
-                    <a href="images/gallery-img-26.jpg" data-caption="Desciprtion here">
-                        <img src="images/gallery-img-26.jpg" alt="Gallery Images">
-                    </a>
-                </div>
-                <div class="col l-4 m-6 s-12 garelly-items" data-aos="flip-right">
-                    <a href="images/gallery-img-23.jpg" data-caption="Desciprtion here">
-                        <img src="images/gallery-img-23.jpg" alt="Gallery Images">
-                    </a>
-                </div>
-                <div class="col l-4 m-6 s-6 garelly-items" data-aos="flip-left">
-                    <a href="images/gallery-img-27.jpg" data-caption="Desciprtion here">
-                        <img src="images/gallery-img-27.jpg" alt="Gallery Images">
-                    </a>
-                </div>
-                <div class="col l-4 m-6 s-12 garelly-items" data-aos="flip-right">
-                    <a href="images/gallery-img-28.jpg" data-caption="Desciprtion here">
-                        <img src="images/gallery-img-28.jpg" alt="Gallery Images">
-                    </a>
-                </div>
-                <div class="col l-4 m-6 s-6 garelly-items" data-aos="flip-left">
-                    <a href="images/gallery-img-30.jpg" data-caption="Desciprtion here">
-                        <img src="images/gallery-img-30.jpg" alt="Gallery Images">
-                    </a>
-                </div>
-                <div class="col l-4 m-6 s-6 garelly-items" data-aos="flip-down">
-                    <a href="images/gallery-img-29.jpg" data-caption="Desciprtion here">
-                        <img src="images/gallery-img-29.jpg" alt="Gallery Images">
-                    </a>
-                </div>
-            </div>
+            </form>
         </section>
-        <!-- end garelly -->
+        <!-- end chef -->
 
         <!-- footer -->
         <footer class="footer" id="go-to-contact">

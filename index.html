@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Custom -->
-    <link rel="stylesheet" href="css/custom-slick.css">
+    <link rel="stylesheet" href="css/custom.css">
 
     <!-- Responesive -->
     <link rel="stylesheet" href="css/responsive.css">
@@ -40,7 +40,7 @@
 </head>
 
 <body>
-    <div class="grid" style="overflow:hidden;">
+    <div class="grid" style="overflow: hidden;">
         <!-- header -->
         <header class="header fixed-top">
             <div class="navbar">
@@ -52,18 +52,18 @@
                     <div class="navbar__right hide-on-mobile-tablet">
                         <ul>
                             <li><a class="active" href="index.html">Trang Chủ</a></li>
-                            <li><a href="index.html">Thực Đơn</a></li>
-                            <li><a href="index.html">Đặt Bàn</a></li>
-                            <li class="sub-menu"><a href="#Blog">Blog</a>
+                            <li><a href="menu.html">Thực Đơn</a></li>
+                            <li><a href="book-a-table.html">Đặt Bàn</a></li>
+                            <li class="sub-menu"><a href="blog.html">Blog</a>
                             </li>
                             <li><a href="#go-to-contact">Liên Hệ</a></li>
                             <li class="sub-menu">
-                                <a href="#Another">Khác
+                                <a href="javascript:;">Khác
                                     <i class="fa fa-caret-down"></i>
                                 </a>
                                 <ul class="sub-menu__content">
-                                    <li><a href="about-us.html">Về Chúng Tôi</a></li>
                                     <li><a href="gallery.html">Thư Viện Ảnh</a></li>
+                                    <li><a href="about-us.html">Về Chúng Tôi</a></li>
                                     <li><a href="chef.html">Đầu Bếp</a></li>
                                 </ul>
                             </li>
@@ -79,19 +79,25 @@
                     <input type="checkbox" name="btn" id="navbar-btn--input" class="navbar-input" hidden>
                     <label for="navbar-btn--input" class="navbar__overlay"></label>
                     <nav class="navbar-moble-tablet">
-                        <label for="navbar-btn--input" class="navbar-btn--close"><i
-                                class="fas fa-times fa-2x"></i></label>
+                        <label for="navbar-btn--input" class="navbar-btn--close">
+                            <i class="fas fa-times fa-2x"></i>
+                        </label>
                         <ul class="navbar-list">
                             <li>
-                                <a class="active navbar-link" href="index.html"><i class="fas fa-home"></i>Trang
-                                    Chủ</a>
+                                <a class="active navbar-link" href="index.html">
+                                    <i class="fas fa-home"></i>Trang Chủ
+                                </a>
                             </li>
                             <li>
-                                <a class="navbar-link" href="index.html"><i class="far fa-list-alt"></i>Thực Đơn</a>
+                                <a class="navbar-link" href="menu.html"><i class="far fa-list-alt"></i>Thực Đơn</a>
                             </li>
-                            <li><a class="navbar-link" href="index.html"><i class="fas fa-chair"></i>Đặt Bàn</a></li>
-                            <li><a class="navbar-link" href="#"><i class="fas fa-blog"></i>Blog</a></li>
-                            <li><a class="navbar-link" href="index.html"><i class="fas fa-phone-volume"></i>Liên Hệ</a>
+                            <li><a class="navbar-link" href="book-a-table.html"><i class="fas fa-chair"></i>Đặt Bàn</a>
+                            </li>
+                            <li><a class="navbar-link" href="blog.html"><i class="fas fa-blog"></i>Blog</a></li>
+                            <li>
+                                <a class="navbar-link" href="#go-to-contact">
+                                    <i class="fas fa-phone-volume"></i>Liên Hệ
+                                </a>
                             </li>
                             <li><a class="navbar-link" href="about-us.html"><i class="far fa-address-card"></i>Về Chúng
                                     Tôi</a>
@@ -114,7 +120,7 @@
                     <p data-aos="slide-right" data-aos-duration="1500" data-aos-delay="500">Thành Nam</p>
                     <p data-aos="slide-left" data-aos-duration="1500" data-aos-delay="500">Restaurant</p>
                 </div>
-                <a class="btn btn-color" href="#">Đặt Bàn</a>
+                <a class="btn btn-color" href="book-a-table.html">Đặt Bàn</a>
             </div>
         </section>
         <!-- end container-fluid-->
@@ -147,7 +153,7 @@
                                 reprehenderit quae laudantium vel.</p>
                         </div>
                         <div class="about__desc-book">
-                            <a class="btn" href="#">Đặt Bàn</a>
+                            <a class="btn" href="book-a-table.html">Đặt Bàn</a>
                         </div>
                     </div>
                     <div class="col l-3 m-3 s-0 about__img" data-aos="slide-left">
@@ -207,8 +213,8 @@
                                     <div class="info">
                                         <div class="info__details">
                                             <h4>Special Drinks 1</h4>
-                                            <p>Sed id magna vitae eros sagittis</p>
-                                            <h4>$7.79</h4>
+                                            <p>Description here</p>
+                                            <h4>Price here</h4>
                                         </div>
                                     </div>
                                 </div>
@@ -219,8 +225,8 @@
                                     <div class="info">
                                         <div class="info__details">
                                             <h4>Special Drinks 2</h4>
-                                            <p>Sed id magna vitae eros sagittis euismod.</p>
-                                            <h4>$7.79</h4>
+                                            <p>Description here</p>
+                                            <h4>Price here</h4>
                                         </div>
                                     </div>
                                 </div>
@@ -231,8 +237,8 @@
                                     <div class="info">
                                         <div class="info__details">
                                             <h4>Special Drinks 3</h4>
-                                            <p>Sed id magna vitae eros sagittis euismod.</p>
-                                            <h4>$7.79</h4>
+                                            <p>Description here</p>
+                                            <h4>Price here</h4>
                                         </div>
                                     </div>
                                 </div>
@@ -242,8 +248,8 @@
                                     <div class="info">
                                         <div class="info__details">
                                             <h4>Special Lunch 1</h4>
-                                            <p>Sed id magna vitae eros sagittis euismod.</p>
-                                            <h4>$7.79</h4>
+                                            <p>Description here</p>
+                                            <h4>Price here</h4>
                                         </div>
                                     </div>
                                 </div>
@@ -254,8 +260,8 @@
                                     <div class="info">
                                         <div class="info__details">
                                             <h4>Special Lunch 2</h4>
-                                            <p>Sed id magna vitae eros sagittis euismod.</p>
-                                            <h4>$7.79</h4>
+                                            <p>Description here</p>
+                                            <h4>Price here</h4>
                                         </div>
                                     </div>
                                 </div>
@@ -265,8 +271,8 @@
                                     <div class="info">
                                         <div class="info__details">
                                             <h4>Special Lunch 3</h4>
-                                            <p>Sed id magna vitae eros sagittis euismod.</p>
-                                            <h4>$7.79</h4>
+                                            <p>Description here</p>
+                                            <h4>Price here</h4>
                                         </div>
                                     </div>
                                 </div>
@@ -277,8 +283,8 @@
                                     <div class="info">
                                         <div class="info__details">
                                             <h4>Special Dinner 1</h4>
-                                            <p>Sed id magna vitae eros sagittis euismod.</p>
-                                            <h4>$7.79</h4>
+                                            <p>Description here</p>
+                                            <h4>Price here</h4>
                                         </div>
                                     </div>
                                 </div>
@@ -288,8 +294,8 @@
                                     <div class="info">
                                         <div class="info__details">
                                             <h4>Special Dinner 2</h4>
-                                            <p>Sed id magna vitae eros sagittis euismod.</p>
-                                            <h4>$7.79</h4>
+                                            <p>Description here</p>
+                                            <h4>Price here</h4>
                                         </div>
                                     </div>
                                 </div>
@@ -300,8 +306,8 @@
                                     <div class="info">
                                         <div class="info__details">
                                             <h4>Special Dinner 3</h4>
-                                            <p>Sed id magna vitae eros sagittis euismod.</p>
-                                            <h4>$7.79</h4>
+                                            <p>Description here</p>
+                                            <h4>Price here</h4>
                                         </div>
                                     </div>
                                 </div>
@@ -366,15 +372,9 @@
                                 <img src="images/quotations-button.png" alt="quotations-button">
                             </div>
                             <div class="col l-12 m-12 s-12 carousel-items__info">
-                                <h3>Thành Nam</h3>
-                                <h4>Web Developer</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptatem
-                                    ratione
-                                    debitis,
-                                    iste nesciunt reprehenderit consequuntur perferendis asperiores odit, fuga animi
-                                    cumque
-                                    eius
-                                    consequatur sed? Exercitationem voluptates illo fugiat beatae.</p>
+                                <h3>Customer name here</h3>
+                                <h4>Customer job</h4>
+                                <p>Reviews here</p>
                             </div>
                         </div>
                         <div class="row carousel-items">
@@ -382,15 +382,9 @@
                                 <img src="images/quotations-button.png" alt="quotations-button">
                             </div>
                             <div class="col l-12 m-12 s-12 carousel-items__info">
-                                <h3>Thành Nam</h3>
-                                <h4>Web Developer</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptatem
-                                    ratione
-                                    debitis,
-                                    iste nesciunt reprehenderit consequuntur perferendis asperiores odit, fuga animi
-                                    cumque
-                                    eius
-                                    consequatur sed? Exercitationem voluptates illo fugiat beatae.</p>
+                                <h3>Customer name here</h3>
+                                <h4>Customer job</h4>
+                                <p>Reviews here</p>
                             </div>
                         </div>
                         <div class="row carousel-items">
@@ -398,15 +392,9 @@
                                 <img src="images/quotations-button.png" alt="quotations-button">
                             </div>
                             <div class="col l-12 m-12 s-12 carousel-items__info">
-                                <h3>Thành Nam</h3>
-                                <h4>Web Developer</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptatem
-                                    ratione
-                                    debitis,
-                                    iste nesciunt reprehenderit consequuntur perferendis asperiores odit, fuga animi
-                                    cumque
-                                    eius
-                                    consequatur sed? Exercitationem voluptates illo fugiat beatae.</p>
+                                <h3>Customer name here</h3>
+                                <h4>Customer job</h4>
+                                <p>Reviews here</p>
                             </div>
                         </div>
                         <div class="row carousel-items">
@@ -414,15 +402,9 @@
                                 <img src="images/quotations-button.png" alt="quotations-button">
                             </div>
                             <div class="col l-12 m-12 s-12 carousel-items__info">
-                                <h3>Thành Nam</h3>
-                                <h4>Web Developer</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptatem
-                                    ratione
-                                    debitis,
-                                    iste nesciunt reprehenderit consequuntur perferendis asperiores odit, fuga animi
-                                    cumque
-                                    eius
-                                    consequatur sed? Exercitationem voluptates illo fugiat beatae.</p>
+                                <h3>Customer name here</h3>
+                                <h4>Customer job</h4>
+                                <p>Reviews here</p>
                             </div>
                         </div>
                         <div class="row carousel-items">
@@ -430,15 +412,9 @@
                                 <img src="images/quotations-button.png" alt="quotations-button">
                             </div>
                             <div class="col l-12 m-12 s-12 carousel-items__info">
-                                <h3>Thành Nam</h3>
-                                <h4>Web Developer</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptatem
-                                    ratione
-                                    debitis,
-                                    iste nesciunt reprehenderit consequuntur perferendis asperiores odit, fuga animi
-                                    cumque
-                                    eius
-                                    consequatur sed? Exercitationem voluptates illo fugiat beatae.</p>
+                                <h3>Customer name here</h3>
+                                <h4>Customer job</h4>
+                                <p>Reviews here</p>
                             </div>
                         </div>
                         <div class="row carousel-items">
@@ -446,15 +422,9 @@
                                 <img src="images/quotations-button.png" alt="quotations-button">
                             </div>
                             <div class="col l-12 m-12 s-12 carousel-items__info">
-                                <h3>Thành Nam</h3>
-                                <h4>Web Developer</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptatem
-                                    ratione
-                                    debitis,
-                                    iste nesciunt reprehenderit consequuntur perferendis asperiores odit, fuga animi
-                                    cumque
-                                    eius
-                                    consequatur sed? Exercitationem voluptates illo fugiat beatae.</p>
+                                <h3>Customer name here</h3>
+                                <h4>Customer job</h4>
+                                <p>Reviews here</p>
                             </div>
                         </div>
                         <div class="row carousel-items">
@@ -462,15 +432,9 @@
                                 <img src="images/quotations-button.png" alt="quotations-button">
                             </div>
                             <div class="col l-12 m-12 s-12 carousel-items__info">
-                                <h3>Thành Nam</h3>
-                                <h4>Web Developer</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptatem
-                                    ratione
-                                    debitis,
-                                    iste nesciunt reprehenderit consequuntur perferendis asperiores odit, fuga animi
-                                    cumque
-                                    eius
-                                    consequatur sed? Exercitationem voluptates illo fugiat beatae.</p>
+                                <h3>Customer name here</h3>
+                                <h4>Customer job</h4>
+                                <p>Reviews here</p>
                             </div>
                         </div>
                         <div class="row carousel-items">
@@ -478,15 +442,9 @@
                                 <img src="images/quotations-button.png" alt="quotations-button">
                             </div>
                             <div class="col l-12 m-12 s-12 carousel-items__info">
-                                <h3>Thành Nam</h3>
-                                <h4>Web Developer</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptatem
-                                    ratione
-                                    debitis,
-                                    iste nesciunt reprehenderit consequuntur perferendis asperiores odit, fuga animi
-                                    cumque
-                                    eius
-                                    consequatur sed? Exercitationem voluptates illo fugiat beatae.</p>
+                                <h3>Customer name here</h3>
+                                <h4>Customer job</h4>
+                                <p>Reviews here</p>
                             </div>
                         </div>
                     </div>
@@ -557,9 +515,10 @@
                                         <h3>Đăng Ký Nhận Thông Tin</h3>
                                     </div>
                                     <div class="footer__mid-items--details">
-                                        <form action="#">
-                                            <input type="text" placeholder="Nhập địa chỉ Email..." required>
-                                            <input type="submit" value="Đăng Ký">
+                                        <form action="javascript:void(0);">
+                                            <input type="email" placeholder="Nhập địa chỉ Email..." id="register"
+                                                required>
+                                            <input type="submit" value="Đăng Ký" onclick="registerCheck()">
                                         </form>
                                         <ul class="social-items">
                                             <li>
@@ -601,9 +560,9 @@
                                     </div>
                                     <div class="footer__mid-items--details">
                                         <p>Thứ Hai: Đóng Cửa</p>
-                                        <p>Thứ Ba - Thứ Tư: 9:AM - 10:PM</p>
-                                        <p>Thứ Năm - Thứ Sáu: 9:AM - 10:PM</p>
-                                        <p>Thứ Bảy - Chủ Nhật: 5:PM - 10:PM</p>
+                                        <p>Thứ Ba - Thứ Tư: 9:00 AM - 10:00 PM</p>
+                                        <p>Thứ Năm - Thứ Sáu: 9:00AM - 10:00 PM</p>
+                                        <p>Thứ Bảy - Chủ Nhật: 5:00 PM - 10:00 PM</p>
                                     </div>
                                 </div>
                             </div>
@@ -619,11 +578,15 @@
                 <a id="go-to-top" href="#goback"><i class="fas fa-angle-up"></i></a>
             </div>
         </footer>
+
         <!-- end footer -->
     </div>
 
     <!-- Animation JS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- Sweet Alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <!-- All Flugins -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

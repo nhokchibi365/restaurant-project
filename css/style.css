@@ -97,7 +97,6 @@ a.active {
   display: block;
   padding: 1.5rem 2rem;
   border-radius: unset;
-  color: var(--primary-color);
 }
 
 .sub-menu:hover .sub-menu__content {
@@ -335,6 +334,7 @@ a.active {
   border-radius: 1.5rem;
   margin: 2rem 0 0;
 
+  cursor: pointer;
   transition: all 0.3s;
 }
 

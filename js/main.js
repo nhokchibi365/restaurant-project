@@ -10,7 +10,8 @@ $(document).ready(function () {
     }
   });
   $("#go-to-top").click(function () {
-    $("html, body").animate({
+    $("html, body").animate(
+      {
         scrollTop: 0,
       },
       1500
@@ -35,7 +36,8 @@ var $root = $("html, body");
 $('a[href^="#"]').click(function () {
   var href = $.attr(this, "href");
 
-  $root.animate({
+  $root.animate(
+    {
       scrollTop: $(href).offset().top,
     },
     1000,
@@ -82,3 +84,52 @@ $(document).ready(function () {
         BaguetteBox
     ............................................... */
 baguetteBox.run(".gallery");
+
+/* ..............................................
+        Display dialog successful
+    ............................................... */
+function bookingCheck() {
+  var date = document.getElementById("date");
+  var name = document.getElementById("name");
+  var address = document.getElementById("address");
+  var phone = document.getElementById("phone");
+
+  if (
+    date.value != "" &&
+    name.value != "" &&
+    address.value != "" &&
+    phone.value != ""
+  ) {
+    swal({
+      title: "Xác nhận!",
+      text: "Bạn chắc chắn đặt bàn chứ ?",
+      icon: "warning",
+      buttons: true,
+      dangerMode: true,
+    }).then((willDelete) => {
+      if (willDelete) {
+        swal(
+          "Bạn đã đặt bàn thành công!",
+          "Cảm ơn bạn đã sử dụng dịch vụ của chúng tôi !",
+          {
+            icon: "success",
+          }
+        );
+      } else {
+        swal("Bạn đã huỷ đặt bàn !");
+      }
+    });
+  }
+}
+
+function registerCheck() {
+  var register = document.getElementById("register");
+
+  if (register.value != "") {
+    swal(
+      "Bạn đã đăng ký nhận thông tin thành công!",
+      "Cảm ơn bạn đã sử dụng dịch vụ của chúng tôi !",
+      "success"
+    );
+  }
+}
