@@ -22,7 +22,7 @@
   display: flex;
   align-items: center;
 
-  padding: 1.5rem 1rem;
+  padding: 0.5rem 0 0;
 }
 
 nav.row {
@@ -53,7 +53,7 @@ nav.row {
   display: block;
   font-weight: 600;
 
-  padding: 1.5rem 2rem;
+  padding: 1rem 2rem;
   border-radius: 3rem;
 
   color: var(--primary-color);
@@ -292,6 +292,7 @@ a.active {
 .footer__mid-items--headline h3 {
   position: relative;
   padding: 0 0 2rem;
+  white-space: nowrap;
 }
 
 .footer__mid-items--headline h3::after {
@@ -318,7 +319,7 @@ a.active {
 .footer__mid-subcribe input {
   display: block;
   width: 100%;
-  padding: 1.5rem 0;
+  padding: 1.5rem 2rem;
 }
 
 .footer__mid-subcribe input:focus {

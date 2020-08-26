@@ -556,7 +556,7 @@ a.btn:hover {
 
 .book-a-table input[type="text"],
 .book-a-table input[type="number"] {
-  padding: 1.7rem 0;
+  padding: 1.7rem 2rem;
 }
 
 .book-a-table input:focus {
@@ -587,4 +587,90 @@ a.btn:hover {
 .book-a-table__submit {
   margin: 0 auto;
   position: relative;
+}
+
+/*--------------------------------------
+  Blog Page
+  --------------------------------------*/
+.blog {
+  padding: 7rem 0;
+}
+
+/* blog left */
+.blog-left-sidebar {
+  padding: 5rem;
+}
+
+.blog-items {
+  overflow: hidden;
+  box-shadow: 0 1rem 0.8rem var(--shadow-color);
+}
+
+.blog-items:not(:first-child) {
+  margin-top: 4rem;
+}
+
+.blog-items a:hover {
+  color: var(--primary-color);
+}
+
+.blog-items a:hover > i {
+  color: var(--primary-color);
+}
+
+.blog-items__img {
+  position: relative;
+  width: 100%;
+}
+
+.blog-items__img img {
+  width: 98%;
+  display: block;
+  box-shadow: 2rem 1.5rem 0 var(--primary-color);
+}
+
+.blog-items__img p {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 20%;
+  height: 4rem;
+
+  line-height: 4rem;
+  text-align: center;
+
+  color: var(--white-color);
+  background: var(--primary-color);
+}
+
+.blog-items__details {
+  padding: 3rem;
+}
+
+.blog-items__details h3 {
+  font-size: 2.4rem;
+  padding: 1rem 0;
+}
+
+.blog-items__details a {
+  color: var(--text-color);
+}
+
+.blog-items__details p {
+  padding: 1rem 0;
+}
+
+.blog-items__details-status {
+  display: flex;
+  font-size: 1.4rem;
+}
+
+.blog-items__details-status li {
+  padding: 0 1rem 0 0;
+}
+
+.blog-items__details-status li > a > i {
+  color: var(--text-color);
+  padding: 0 0.5rem;
 }

@@ -1,6 +1,6 @@
 /* ..............................................
-        Map Full
-    ............................................... */
+  Back to top when click
+............................................... */
 $(document).ready(function () {
   $(window).on("scroll", function () {
     if ($(this).scrollTop() > 100) {
@@ -10,44 +10,60 @@ $(document).ready(function () {
     }
   });
   $("#go-to-top").click(function () {
-    $("html, body").animate({
+    $("html, body").animate(
+      {
         scrollTop: 0,
       },
-      1500
+      2000
     );
     return false;
   });
 });
 
-var $root = $("html, body");
-$('a[href^="#"]').click(function () {
-  var href = $.attr(this, "href");
-
-  $root.animate({
-      scrollTop: $(href).offset().top,
-    },
-    1000,
-    function () {
-      window.location.hash = href;
-    }
-  );
-
-  return false;
-});
 /* ..............................................
-        Special Menu
+  Scroll to contact
 ............................................... */
-(function () {
-  var current = $("li > a.active");
-  $("li > a").click(function () {
-    current.removeClass("active");
-    current = $(this);
-    current.addClass("active");
+$(document).ready(function () {
+  $("#scroll-to-contact").click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: $("#go-to-contact").offset().top,
+      },
+      2000
+    );
   });
-})();
+});
 
 /* ..............................................
-        Animation
+  Active navbar when click
+............................................... */
+// pc
+$(document).ready(function () {
+  $(".navbar__right ul li a").click(function () {
+    $(".navbar__right ul li a.active").removeClass("active");
+    $(this).addClass("active");
+  });
+});
+// tablet - mobile
+$(document).ready(function () {
+  $(".navbar-list li a").click(function () {
+    $(".navbar-list li a.active").removeClass("active");
+    $(this).addClass("active");
+  });
+});
+
+/* ..............................................
+  Special Menu - Active when click items
+............................................... */
+$(document).ready(function () {
+  $(".navbar-menu li a").click(function () {
+    $(".navbar-menu li a.active").removeClass("active");
+    $(this).addClass("active");
+  });
+});
+
+/* ..............................................
+  Animation
     ............................................... */
 AOS.init({
   offset: 200,
@@ -56,7 +72,7 @@ AOS.init({
 });
 
 /* ..............................................
-        Carousel (Qoute, Customer Reivews)
+  Carousel (Qoute, Customer Reivews)
     ............................................... */
 $(document).ready(function () {
   $(".qoute").slick({
@@ -68,6 +84,7 @@ $(document).ready(function () {
     arrows: false,
   });
 });
+
 $(document).ready(function () {
   $(".reviews").slick({
     slidesToShow: 1,
@@ -108,7 +125,8 @@ function bookingCheck() {
       if (willDelete) {
         swal(
           "Bạn đã đặt bàn thành công!",
-          "Cảm ơn bạn đã sử dụng dịch vụ của chúng tôi !", {
+          "Cảm ơn bạn đã sử dụng dịch vụ của chúng tôi !",
+          {
             icon: "success",
           }
         );
@@ -123,7 +141,11 @@ function bookingCheck() {
 
 function registerCheck() {
   var register = document.getElementById("register");
-  if (register.value != "" && register.value.indexOf("@") != -1 && register.value.indexOf(".") != -1) {
+  if (
+    register.value != "" &&
+    register.value.indexOf("@") != -1 &&
+    register.value.indexOf(".") != -1
+  ) {
     swal(
       "Bạn đã đăng ký nhận thông tin thành công!",
       "Cảm ơn bạn đã sử dụng dịch vụ của chúng tôi !",
