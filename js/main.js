@@ -116,13 +116,14 @@ function bookingCheck() {
         swal("Bạn đã huỷ đặt bàn !");
       }
     });
+  } else {
+    swal("Lỗi!", "Bạn chưa nhập thông tin !", "warning");
   }
 }
 
 function registerCheck() {
   var register = document.getElementById("register");
-
-  if (register.value != "") {
+  if (register.value != "" && register.value.indexOf("@") != -1 && register.value.indexOf(".") != -1) {
     swal(
       "Bạn đã đăng ký nhận thông tin thành công!",
       "Cảm ơn bạn đã sử dụng dịch vụ của chúng tôi !",
