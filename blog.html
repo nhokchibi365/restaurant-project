@@ -126,10 +126,10 @@
                 <div class="row">
                     <div class="col l-9 m-12 s-12">
                         <div class="blog-left-sidebar">
-                            <article class="blog-items">
+                            <article class="blog-items" data-aos="fade-up">
                                 <div class="blog-items__img">
                                     <img src="images/gallery-img-21.jpg" alt="blog images">
-                                    <p>15/ Tháng Một</p>
+                                    <p>15 Tháng Một</p>
                                 </div>
                                 <div class="blog-items__details">
                                     <a href="javascript:;">
@@ -146,10 +146,10 @@
                                     </ul>
                                 </div>
                             </article>
-                            <article class="blog-items">
+                            <article class="blog-items" data-aos="fade-up">
                                 <div class="blog-items__img">
-                                    <img src="images/gallery-img-21.jpg" alt="blog images">
-                                    <p>15/ Tháng Một</p>
+                                    <img src="images/gallery-img-05.jpg" alt="blog images">
+                                    <p>16 Tháng Hai</p>
                                 </div>
                                 <div class="blog-items__details">
                                     <a href="javascript:;">
@@ -166,10 +166,10 @@
                                     </ul>
                                 </div>
                             </article>
-                            <article class="blog-items">
+                            <article class="blog-items" data-aos="fade-up">
                                 <div class="blog-items__img">
-                                    <img src="images/gallery-img-21.jpg" alt="blog images">
-                                    <p>15/ Tháng Một</p>
+                                    <img src="images/gallery-img-06.jpg" alt="blog images">
+                                    <p>27 Tháng Tư</p>
                                 </div>
                                 <div class="blog-items__details">
                                     <a href="javascript:;">
@@ -190,7 +190,87 @@
                     </div>
                     <div class="col l-3 m-12 s-12">
                         <div class="blog-right-sidebar">
-
+                            <div class="searching" data-aos="fade-up" data-aos-delay="300">
+                                <form action="javascript:void(0);">
+                                    <div class="searching__typing">
+                                        <input type="text" name="search" id="search" placeholder="Tìm kiếm...">
+                                        <i class="fas fa-search" onclick="searching()"></i></div>
+                                    <div class="search-btn">
+                                        <input type="submit" value="Search" onclick="searching()">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="category" data-aos="zoom-in" data-aos-delay="500">
+                                <div class="blog-right-sidebar__header">
+                                    <h2 class="blog-right-sidebar__header-title">Chuyên Mục</h2>
+                                </div>
+                                <ul class="category__menu">
+                                    <li class="category__menu-items"><a href="javascript:;">Thực phẩm (<span
+                                                class="count-category">37</span>)</a></li>
+                                    <li class="category__menu-items"><a href="javascript:;">Tin tức du lịch (<span
+                                                class="count-category">37</span>)</a>
+                                    </li>
+                                    <li class="category__menu-items"><a href="javascript:;">Công nghệ mới(<span
+                                                class="count-category">37</span>)</a></li>
+                                    <li class="category__menu-items"><a href="javascript:;">Sản phẩm (<span
+                                                class="count-category">37</span>)</a></li>
+                                    <li class="category__menu-items"><a href="javascript:;">Cảm hứng mới (<span
+                                                class="count-category">37</span>)</a>
+                                    </li>
+                                    <li class="category__menu-items"><a href="javascript:;">Sức khoẻ (<span
+                                                class="count-category">37</span>)</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="recent-post" data-aos="zoom-in" data-aos-delay="300">
+                                <div class="blog-right-sidebar__header">
+                                    <h2 class="blog-right-sidebar__header-title">Bài Viết Gần Đây</h2>
+                                </div>
+                                <ul class="recent-post-menu">
+                                    <li class="recent-post__menu-items">
+                                        <img src="images/post-img-01.jpg" alt="post images">
+                                        <div class="recent-post__menu-items--details">
+                                            <a href="javascript">
+                                                <h3>title here</h3>
+                                            </a>
+                                            <p>Tháng Một 1, 2020</p>
+                                        </div>
+                                    </li>
+                                    <li class="recent-post__menu-items">
+                                        <img src="images/post-img-02.jpg" alt="post images">
+                                        <div class="recent-post__menu-items--details">
+                                            <a href="javascript">
+                                                <h3>title here</h3>
+                                            </a>
+                                            <p>Tháng Một 1, 2020</p>
+                                        </div>
+                                    </li>
+                                    <li class="recent-post__menu-items">
+                                        <img src="images/post-img-03.jpg" alt="post images">
+                                        <div class="recent-post__menu-items--details">
+                                            <a href="javascript">
+                                                <h3>title here</h3>
+                                            </a>
+                                            <p>Tháng Một 1, 2020</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tag-clouds" data-aos="zoom-in" data-aos-delay="300">
+                                <div class="blog-right-sidebar__header">
+                                    <h2 class="blog-right-sidebar__header-title">Từ Khoá</h2>
+                                </div>
+                                <div class="tag-clouds__menu">
+                                    <a class="tag-clouds__menu-items">thực phẩm</a>
+                                    <a class="tag-clouds__menu-items">làm đẹp</a>
+                                    <a class="tag-clouds__menu-items">sức khoẻ</a>
+                                    <a class="tag-clouds__menu-items">công nghệ</a>
+                                    <a class="tag-clouds__menu-items">tin tức</a>
+                                    <a class="tag-clouds__menu-items">đời sống</a>
+                                    <a class="tag-clouds__menu-items">giảm giá</a>
+                                    <a class="tag-clouds__menu-items">thiết kế</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

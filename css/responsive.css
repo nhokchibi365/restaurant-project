@@ -38,6 +38,17 @@
   .about-us-bg:nth-child(odd) .about-us__content {
     flex-direction: column-reverse;
   }
+
+  /*--------------------------------------
+  Blog Page
+  --------------------------------------*/
+  .blog-left-sidebar {
+    padding: 5rem 5rem 0;
+  }
+
+  .blog-right-sidebar {
+    padding: 5rem;
+  }
 }
 
 /*------------------------------------

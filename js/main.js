@@ -10,8 +10,7 @@ $(document).ready(function () {
     }
   });
   $("#go-to-top").click(function () {
-    $("html, body").animate(
-      {
+    $("html, body").animate({
         scrollTop: 0,
       },
       2000
@@ -25,8 +24,7 @@ $(document).ready(function () {
 ............................................... */
 $(document).ready(function () {
   $("#scroll-to-contact").click(function () {
-    $("html, body").animate(
-      {
+    $("html, body").animate({
         scrollTop: $("#go-to-contact").offset().top,
       },
       2000
@@ -66,7 +64,7 @@ $(document).ready(function () {
   Animation
     ............................................... */
 AOS.init({
-  offset: 200,
+  offset: 150,
   delay: 0,
   duration: 1000,
 });
@@ -125,8 +123,7 @@ function bookingCheck() {
       if (willDelete) {
         swal(
           "Bạn đã đặt bàn thành công!",
-          "Cảm ơn bạn đã sử dụng dịch vụ của chúng tôi !",
-          {
+          "Cảm ơn bạn đã sử dụng dịch vụ của chúng tôi !", {
             icon: "success",
           }
         );
@@ -135,7 +132,7 @@ function bookingCheck() {
       }
     });
   } else {
-    swal("Lỗi!", "Bạn chưa nhập thông tin !", "warning");
+    swal("Xảy ra lỗi !", "Bạn chưa nhập thông tin !", "error");
   }
 }
 
@@ -151,5 +148,20 @@ function registerCheck() {
       "Cảm ơn bạn đã sử dụng dịch vụ của chúng tôi !",
       "success"
     );
+  } else {
+    swal("Xảy ra lỗi !", "Bạn chưa nhập thông tin !", "error");
+  }
+}
+
+function searching() {
+  var check = document.getElementById("search");
+
+  if (check.value != '') {
+    swal({
+      title: "Tìm kiếm thông tin thành công !",
+      icon: "success",
+    });
+  } else {
+    swal("Xảy ra lỗi !", "Bạn chưa nhập thông tin !", "error");
   }
 }
