@@ -157,6 +157,7 @@
   }
 
   .navbar-list a {
+    border-radius: 1rem;
     padding: 2rem 0;
     margin-left: 0;
     color: var(--white-color);

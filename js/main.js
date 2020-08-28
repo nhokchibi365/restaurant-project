@@ -158,8 +158,9 @@ function searching() {
 
   if (check.value != '') {
     swal({
-      title: "Tìm kiếm thông tin thành công !",
-      icon: "success",
+      title: "Xin lỗi !",
+      text: "Tính năng chưa được phát triển, vui lòng thử lại sau !",
+      icon: "info",
     });
   } else {
     swal("Xảy ra lỗi !", "Bạn chưa nhập thông tin !", "error");
