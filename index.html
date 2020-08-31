@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thành Nam Restaurant</title>
+
     <!-- Favicon -->
-    <!-- <link rel="shortcut icon" href="NewBiz/img/favicon.png"> -->
+    <link rel="shortcut icon" href="images/icon.ico">
 
     <!-- Reset layout -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
@@ -40,7 +41,7 @@
 </head>
 
 <body>
-    <div class="grid" style="overflow: hidden;">
+    <div class="grid">
         <!-- header -->
         <header class="header fixed-top">
             <div class="navbar">
@@ -56,7 +57,7 @@
                             <li><a href="book-a-table.html">Đặt Bàn</a></li>
                             <li class="sub-menu"><a href="blog.html">Blog</a>
                             </li>
-                            <li><a id="scroll-to-contact" href="#go-to-contact">Liên Hệ</a></li>
+                            <li><a class="scroll-to-contact" href="#go-to-contact">Liên Hệ</a></li>
                             <li class="sub-menu">
                                 <a href="javascript:;">Khác
                                     <i class="fa fa-caret-down"></i>
@@ -95,7 +96,7 @@
                             </li>
                             <li><a class="navbar-link" href="blog.html"><i class="fas fa-blog"></i>Blog</a></li>
                             <li>
-                                <a id="scroll-to-contact" class="navbar-link" href="#go-to-contact">
+                                <a class="scroll-to-contact navbar-link" href="#go-to-contact">
                                     <i class="fas fa-phone-volume"></i>Liên Hệ
                                 </a>
                             </li>
@@ -117,8 +118,8 @@
                 <p data-aos="fade-down">Premium</p>
                 <p data-aos="fade-down" data-aos-delay="300">Quality</p>
                 <div class="title">
-                    <p data-aos="slide-right" data-aos-duration="1500" data-aos-delay="500">Thành Nam</p>
-                    <p data-aos="slide-left" data-aos-duration="1500" data-aos-delay="500">Restaurant</p>
+                    <p data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500">Thành Nam</p>
+                    <p data-aos="fade-left" data-aos-duration="1500" data-aos-delay="500">Restaurant</p>
                 </div>
                 <a class="btn btn-color" href="book-a-table.html">Đặt Bàn</a>
             </div>
@@ -129,7 +130,7 @@
         <section class="about">
             <div class="grid wide">
                 <div class="row">
-                    <div class="col l-3 m-3 s-0 about__img" data-aos="slide-right">
+                    <div class="col l-3 m-3 s-0 about__img" data-aos="fade-right">
                         <img src="images/about-01.jpg" alt="about images">
                     </div>
                     <div class="col l-6 m-6 s-12 about__desc" data-aos="fade-up" data-aos-offset="250">
@@ -156,7 +157,7 @@
                             <a class="btn" href="book-a-table.html">Đặt Bàn</a>
                         </div>
                     </div>
-                    <div class="col l-3 m-3 s-0 about__img" data-aos="slide-left">
+                    <div class="col l-3 m-3 s-0 about__img" data-aos="fade-left">
                         <img src="images/about-02.jpg" alt="about images">
                     </div>
                 </div>
@@ -208,8 +209,9 @@
                     <div class="col l-9 m-12 s-12" data-aos="fade-left">
                         <div class=" row fixed-row--margin">
                             <div class="col l-4 m-6 s-12 padding-items--mobile">
-                                <div class="menu-items" data-aos="flip-down">
+                                <div class="menu-items">
                                     <img src="images/img-01.jpg" alt="drink 1">
+                                    <p class="menu-items__details">Xem chi tiết</p>
                                     <div class="info">
                                         <div class="info__details">
                                             <h4>Special Drinks 1</h4>
@@ -220,8 +222,9 @@
                                 </div>
                             </div>
                             <div class="col l-4 m-6 s-12 padding-items--mobile">
-                                <div class="menu-items" data-aos="flip-up">
+                                <div class="menu-items">
                                     <img src="images/img-02.jpg" alt="drink 2">
+                                    <p class="menu-items__details">Xem chi tiết</p>
                                     <div class="info">
                                         <div class="info__details">
                                             <h4>Special Drinks 2</h4>
@@ -232,8 +235,9 @@
                                 </div>
                             </div>
                             <div class="col l-4 m-6 s-12 padding-items--mobile">
-                                <div class="menu-items" data-aos="flip-down">
+                                <div class="menu-items">
                                     <img src="images/img-03.jpg" alt="drink 3">
+                                    <p class="menu-items__details">Xem chi tiết</p>
                                     <div class="info">
                                         <div class="info__details">
                                             <h4>Special Drinks 3</h4>
@@ -244,7 +248,9 @@
                                 </div>
                             </div>
                             <div class="col l-4 m-6 s-12 padding-items--mobile">
-                                <div class="menu-items" data-aos="flip-up"> <img src="images/img-04.jpg" alt="lunch 1">
+                                <div class="menu-items">
+                                    <img src="images/img-04.jpg" alt="lunch 1">
+                                    <p class="menu-items__details">Xem chi tiết</p>
                                     <div class="info">
                                         <div class="info__details">
                                             <h4>Special Lunch 1</h4>
@@ -255,8 +261,9 @@
                                 </div>
                             </div>
                             <div class="col l-4 m-6 s-12 padding-items--mobile">
-                                <div class="menu-items" data-aos="flip-down"> <img src="images/img-05.jpg"
-                                        alt="lunch 2">
+                                <div class="menu-items">
+                                    <img src="images/img-05.jpg" alt="lunch 2">
+                                    <p class="menu-items__details">Xem chi tiết</p>
                                     <div class="info">
                                         <div class="info__details">
                                             <h4>Special Lunch 2</h4>
@@ -267,7 +274,9 @@
                                 </div>
                             </div>
                             <div class="col l-4 m-6 s-12 padding-items--mobile">
-                                <div class="menu-items" data-aos="flip-up"> <img src="images/img-06.jpg" alt="lunch 3">
+                                <div class="menu-items">
+                                    <img src="images/img-06.jpg" alt="lunch 3">
+                                    <p class="menu-items__details">Xem chi tiết</p>
                                     <div class="info">
                                         <div class="info__details">
                                             <h4>Special Lunch 3</h4>
@@ -278,8 +287,9 @@
                                 </div>
                             </div>
                             <div class="col l-4 m-6 s-12 padding-items--mobile">
-                                <div class="menu-items" data-aos="flip-down"> <img src="images/img-07.jpg"
-                                        alt="dinner 1">
+                                <div class="menu-items">
+                                    <img src="images/img-07.jpg" alt="dinner 1">
+                                    <p class="menu-items__details">Xem chi tiết</p>
                                     <div class="info">
                                         <div class="info__details">
                                             <h4>Special Dinner 1</h4>
@@ -290,7 +300,9 @@
                                 </div>
                             </div>
                             <div class="col l-4 m-6 s-12 padding-items--mobile">
-                                <div class="menu-items" data-aos="flip-up"> <img src="images/img-08.jpg" alt="dinner 2">
+                                <div class="menu-items">
+                                    <img src="images/img-08.jpg" alt="dinner 2">
+                                    <p class="menu-items__details">Xem chi tiết</p>
                                     <div class="info">
                                         <div class="info__details">
                                             <h4>Special Dinner 2</h4>
@@ -301,8 +313,9 @@
                                 </div>
                             </div>
                             <div class="col l-4 m-6 s-12 padding-items--mobile">
-                                <div class="menu-items" data-aos="flip-down"> <img src="images/img-09.jpg"
-                                        alt="dinner 3">
+                                <div class="menu-items">
+                                    <img src="images/img-09.jpg" alt="dinner 3">
+                                    <p class="menu-items__details">Xem chi tiết</p>
                                     <div class="info">
                                         <div class="info__details">
                                             <h4>Special Dinner 3</h4>
@@ -325,33 +338,33 @@
                 <h2>Ảnh</h2>
             </header>
             <div class="row gallery">
-                <div class="col l-4 m-6 s-12 garelly-items" data-aos="flip-right">
-                    <a href="images/gallery-img-01.jpg" data-caption="Desciprtion here">
+                <div class="col l-4 m-6 s-12 gallery-items" data-aos="flip-right">
+                    <a href="images/gallery-img-01.jpg">
                         <img src="images/gallery-img-01.jpg" alt="Gallery Images">
                     </a>
                 </div>
-                <div class="col l-4 m-6 s-6 garelly-items" data-aos="flip-down">
-                    <a href="images/gallery-img-02.jpg" data-caption="Desciprtion here">
+                <div class="col l-4 m-6 s-6 gallery-items" data-aos="flip-down">
+                    <a href="images/gallery-img-02.jpg">
                         <img src="images/gallery-img-02.jpg" alt="Gallery Images">
                     </a>
                 </div>
-                <div class="col l-4 m-6 s-6 garelly-items" data-aos="flip-left">
-                    <a href="images/gallery-img-03.jpg" data-caption="Desciprtion here">
+                <div class="col l-4 m-6 s-6 gallery-items" data-aos="flip-left">
+                    <a href="images/gallery-img-03.jpg">
                         <img src="images/gallery-img-03.jpg" alt="Gallery Images">
                     </a>
                 </div>
-                <div class="col l-4 m-6 s-12 garelly-items" data-aos="flip-right">
-                    <a href="images/gallery-img-04.jpg" data-caption="Desciprtion here">
+                <div class="col l-4 m-6 s-12 gallery-items" data-aos="flip-right">
+                    <a href="images/gallery-img-04.jpg">
                         <img src="images/gallery-img-04.jpg" alt="Gallery Images">
                     </a>
                 </div>
-                <div class="col l-4 m-6 s-6 garelly-items" data-aos="flip-down">
-                    <a href="images/gallery-img-05.jpg" data-caption="Desciprtion here">
+                <div class="col l-4 m-6 s-6 gallery-items" data-aos="flip-down">
+                    <a href="images/gallery-img-05.jpg">
                         <img src="images/gallery-img-05.jpg" alt="Gallery Images">
                     </a>
                 </div>
-                <div class="col l-4 m-6 s-6 garelly-items" data-aos="flip-left">
-                    <a href="images/gallery-img-06.jpg" data-caption="Desciprtion here">
+                <div class="col l-4 m-6 s-6 gallery-items" data-aos="flip-left">
+                    <a href="images/gallery-img-06.jpg">
                         <img src="images/gallery-img-06.jpg" alt="Gallery Images">
                     </a>
                 </div>
@@ -366,7 +379,7 @@
                     <header class="col l-12 m-12 s-12 headline" data-aos="flip-down">
                         <h2>Nhận Xét Của Khách Hàng</h2>
                     </header>
-                    <div class="col l-10 m-10 s-12 reviews" data-aos="flip-up">
+                    <div class="col l-10 m-10 s-12 reviews">
                         <div class="row carousel-items">
                             <div class="col l-12 m-12 s-0 carousel-items__img">
                                 <img src="images/quotations-button.png" alt="quotations-button">
@@ -459,13 +472,13 @@
             <div class="footer__top">
                 <div class="grid wide">
                     <div class="row">
-                        <div class="col l-6 m-6 s-0" data-aos="slide-right">
+                        <div class="col l-6 m-6 s-0" data-aos="zoom-in">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9356596756593!2d106.6756248153521!3d10.816235861414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e19559e523%3A0x8e4133bdb1373cc9!2zMzcxIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1597454228030!5m2!1svi!2s"
                                 width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""
                                 aria-hidden="false" tabindex="0"></iframe>
                         </div>
-                        <div class="col l-6 m-6 s-0" data-aos="slide-left">
+                        <div class="col l-6 m-6 s-0" data-aos="zoom-in">
                             <div class="row">
                                 <div class="col l-12 m-12 footer__top-right">
                                     <div class="footer__top-right--items">

@@ -178,7 +178,7 @@ a.btn:hover {
   Special Menu
   ---------------------------------------------*/
 .special-menu {
-  background: url(../images/SpecialMenu-bg-pc.jpg) no-repeat;
+  background: url(../images/SpecialMenu-bg-pc.jpg) repeat-y;
   background-size: 100% 100%;
   margin-top: 6rem;
 }
@@ -234,6 +234,36 @@ a.btn:hover {
   height: auto;
 }
 
+.menu-items .menu-items__details,
+.menu-items .menu-items__sale {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  width: 45%;
+  height: auto;
+
+  padding: 0.5rem 0;
+  border: 0;
+  text-align: center;
+
+  color: var(--white-color);
+  background: var(--primary-color);
+
+  transition: all ease 0.3s;
+}
+
+.menu-items .menu-items__sale {
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 2rem;
+}
+.menu-items:hover .menu-items__details,
+.menu-items:hover .menu-items__sale {
+  display: none;
+}
+
 .info {
   position: absolute;
   bottom: 0;
@@ -257,10 +287,11 @@ a.btn:hover {
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
 
   color: var(--white-color);
 
-  overflow: hidden;
+  word-break: break-word;
   padding: 1rem;
 }
 
@@ -276,18 +307,19 @@ a.btn:hover {
 /*----------------------------------------------
   Garelly
   ---------------------------------------------*/
-.garelly-items {
+.gallery-items {
   padding: 1rem;
+  overflow: hidden;
 }
 
-.garelly-items img {
+.gallery-items img {
   width: 100%;
   height: auto;
 
   border: 0.4rem solid var(--primary-color);
 }
 
-.garelly-items img:hover {
+.gallery-items img:hover {
   transform: scale(1.03);
 
   border: none;

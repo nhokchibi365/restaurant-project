@@ -10,6 +10,12 @@
     display: block;
   }
 
+  /*--------------------
+    Navbar 
+   --------------------*/
+  .navbar {
+    padding: 0.8rem 0;
+  }
   /*---------------------
     Container-fluid
    ---------------------*/
@@ -30,6 +36,10 @@
   /* footer mid */
   .footer__mid-items {
     margin-top: 3rem;
+  }
+
+  .carousel-items__info h3 {
+    font-size: 2.4rem;
   }
 
   /*--------------------------------------
@@ -59,6 +69,13 @@
     display: none;
   }
 
+  /*--------------------
+    Navbar 
+   --------------------*/
+  .navbar-link i {
+    margin: 0 2rem 0 4rem;
+  }
+
   /*---------------------
     Container-fluid
    ---------------------*/
@@ -74,7 +91,7 @@
   Special Menu
   ----------------------*/
   .special-menu {
-    background: url(../images/SpecialMenu-bg-tablet.jpg) no-repeat;
+    background: url(../images/SpecialMenu-bg-tablet.jpg) repeat-y;
     background-size: cover;
   }
 
@@ -128,16 +145,16 @@
   .navbar__left {
     width: 10rem;
     height: 5rem;
+    margin-left: 1rem;
   }
 
   .navbar-btn {
-    margin-right: 1rem;
+    right: 5vw;
   }
 
   .navbar-input:checked ~ .navbar-moble-tablet {
     color: var(--white-color);
-    background: var(--black-color);
-    opacity: 0.9;
+    background: var(--overlay-mobile-color);
   }
 
   .navbar-btn--close {
@@ -158,9 +175,13 @@
 
   .navbar-list a {
     border-radius: 1rem;
-    padding: 2rem 0;
+    padding: 2rem 1.5rem;
     margin-left: 0;
     color: var(--white-color);
+  }
+
+  .navbar-link i {
+    margin: 0 2rem 0 1rem;
   }
 
   /*---------------------

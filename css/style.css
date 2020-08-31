@@ -5,6 +5,11 @@
   background: var(--white-color);
   box-shadow: 0 0 3rem var(--shadow-color);
   border-radius: 0 0 10rem 10rem;
+  transition: all ease 0.3s;
+}
+
+.animate-header {
+  padding: 0.5rem 0 1rem 0;
 }
 
 .header.fixed-top {
@@ -128,9 +133,11 @@ a.active {
   height: 3rem;
 
   display: none;
-  overflow: hidden;
 
-  margin-right: 5rem;
+  position: relative;
+  top: 0;
+  right: 10vw;
+
   cursor: pointer;
 }
 

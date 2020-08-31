@@ -20,10 +20,24 @@ $(document).ready(function () {
 });
 
 /* ..............................................
+  Padding header when scroll
+............................................... */
+$(document).ready(function () {
+  $(window).on("scroll", function () {
+    if ($(this).scrollTop() > 100) {
+      $(".header").addClass("animate-header");
+
+    } else {
+      $(".header").removeClass("animate-header");
+    }
+  });
+});
+
+/* ..............................................
   Scroll to contact
 ............................................... */
 $(document).ready(function () {
-  $("#scroll-to-contact").click(function () {
+  $(".scroll-to-contact").click(function () {
     $("html, body").animate({
         scrollTop: $("#go-to-contact").offset().top,
       },
