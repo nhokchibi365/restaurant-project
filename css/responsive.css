@@ -163,7 +163,7 @@
 
   .navbar-list {
     position: absolute;
-    top: 35%;
+    top: 40%;
     left: 50%;
 
     transform: translate(-50%, -50%);
@@ -177,6 +177,7 @@
     border-radius: 1rem;
     padding: 2rem 1.5rem;
     margin-left: 0;
+    white-space: nowrap;
     color: var(--white-color);
   }
 
@@ -305,5 +306,13 @@
     --------------------------------------*/
   .header-page {
     font-size: 4rem;
+  }
+
+  /*--------------------------------------
+    Book a table Page
+    --------------------------------------*/
+  .book-a-table input[type="submit"] {
+    margin: 2rem auto;
+    width: 50%;
   }
 }

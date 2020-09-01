@@ -234,8 +234,7 @@ a.btn:hover {
   height: auto;
 }
 
-.menu-items .menu-items__details,
-.menu-items .menu-items__sale {
+.menu-items .menu-items__details {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -254,14 +253,61 @@ a.btn:hover {
 }
 
 .menu-items .menu-items__sale {
+  position: absolute;
   top: 0;
   left: 0;
-  width: 20%;
-  height: 2rem;
+
+  padding: 0.5rem 1.5rem;
+  border: 0;
+
+  text-align: center;
+
+  color: var(--white-color);
+  background: var(--primary-color);
+
+  animation: swing infinite 3s;
+  transition: all ease 0.3s;
 }
+
 .menu-items:hover .menu-items__details,
 .menu-items:hover .menu-items__sale {
   display: none;
+}
+
+.menu-items .menu-items__sale::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 0;
+  height: 0;
+
+  border-top: 17px solid transparent;
+  border-left: 10px solid var(--white-color);
+  border-bottom: 17px solid transparent;
+
+  margin: 0 auto;
+  background: var(--primary-color);
+}
+
+.menu-items .menu-items__sale::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 0;
+  height: 0;
+
+  border-top: 17px solid transparent;
+  border-right: 10px solid var(--white-color);
+  border-bottom: 17px solid transparent;
+
+  margin: 0 auto;
+  background: var(--primary-color);
 }
 
 .info {

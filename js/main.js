@@ -1,5 +1,5 @@
 /* ..............................................
-  Back to top when click
+  Back to top
 ............................................... */
 $(document).ready(function () {
   $(window).on("scroll", function () {
@@ -23,12 +23,50 @@ $(document).ready(function () {
   Padding header when scroll
 ............................................... */
 $(document).ready(function () {
+  // change logo
+  $(".navbar__left a img:first-child").hide();
+  $(".navbar__left a img:nth-child(2)").show();
+
+  $(".navbar-btn > i").css("color", "var(--white-color)"); // change icon tablet - mobile
+
   $(window).on("scroll", function () {
     if ($(this).scrollTop() > 100) {
-      $(".header").addClass("animate-header");
-
+      $(".header").addClass("header-background");
+      $(".navbar__left a img:first-child").show();
+      $(".navbar__left a img:nth-child(2)").hide();
+      $(".navbar-btn > i").css("color", "var(--black-color)"); // change icon tablet - mobile
     } else {
-      $(".header").removeClass("animate-header");
+      $(".header").removeClass("header-background");
+      $(".navbar__left a img:first-child").hide();
+      $(".navbar__left a img:nth-child(2)").show();
+      $(".navbar-btn > i").css("color", "var(--white-color)"); // change icon tablet - mobile
+    }
+  });
+});
+
+/* ..............................................
+  Choose list items in special menu
+............................................... */
+$(document).ready(function () {
+  $(".navbar-menu li").click(function () {
+    var choose = $(this).attr("index");
+
+    if (choose == 0) {
+      $(".menu-list__items-drink").show(700);
+      $(".menu-list__items-lunch").show(700);
+      $(".menu-list__items-dinner").show(700);
+    } else if (choose == 1) {
+      $(".menu-list__items-drink").show(700);
+      $(".menu-list__items-lunch").hide(700);
+      $(".menu-list__items-dinner").hide(700);
+    } else if (choose == 2) {
+      $(".menu-list__items-drink").hide(700);
+      $(".menu-list__items-lunch").show(700);
+      $(".menu-list__items-dinner").hide(700);
+    } else {
+      $(".menu-list__items-drink").hide(700);
+      $(".menu-list__items-lunch").hide(700);
+      $(".menu-list__items-dinner").show(700);
     }
   });
 });
@@ -170,7 +208,7 @@ function registerCheck() {
 function searching() {
   var check = document.getElementById("search");
 
-  if (check.value != '') {
+  if (check.value != "") {
     swal({
       title: "Xin lỗi !",
       text: "Tính năng chưa được phát triển, vui lòng thử lại sau !",

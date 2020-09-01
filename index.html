@@ -41,14 +41,17 @@
 </head>
 
 <body>
-    <div class="grid">
+    <div class="grid" style="overflow:hidden">
         <!-- header -->
         <header class="header fixed-top">
             <div class="navbar">
                 <!-- nav pc -->
                 <nav class="grid wide row">
                     <div class="navbar__left">
-                        <a href="index.html"><img src="images/logo-brand.png" alt="logo"></a>
+                        <a href="index.html">
+                            <img src="images/logo-brand.png" alt="logo">
+                            <img src="images/logo-brand-2.png" alt="logo">
+                        </a>
                     </div>
                     <div class="navbar__right hide-on-mobile-tablet">
                         <ul>
@@ -200,28 +203,29 @@
                 <div class="row">
                     <div class="col l-3 m-12 s-12" data-aos="fade-right">
                         <ul class="navbar-menu">
-                            <li><a class="active navbar-link" href="#All">Tất Cả</a></li>
-                            <li><a class="navbar-link" href="#Drink">Thức Uống</a></li>
-                            <li><a class="navbar-link" href="#Lunch">Bữa Trưa</a></li>
-                            <li><a class="navbar-link" href="#Dinner">Bữa Tối</a></li>
+                            <li index="0"><a class="active navbar-link" href="javascript:;">Tất Cả</a></li>
+                            <li index="1"><a class="navbar-link" href="javascript:;">Thức Uống</a></li>
+                            <li index="2"><a class="navbar-link" href="javascript:;">Bữa Trưa</a></li>
+                            <li index="3"><a class="navbar-link" href="javascript:;">Bữa Tối</a></li>
                         </ul>
                     </div>
                     <div class="col l-9 m-12 s-12" data-aos="fade-left">
-                        <div class=" row fixed-row--margin">
-                            <div class="col l-4 m-6 s-12 padding-items--mobile">
+                        <div class="row fixed-row--margin menu-list">
+                            <div class="col l-4 m-6 s-12 padding-items--mobile menu-list__items-drink">
                                 <div class="menu-items">
                                     <img src="images/img-01.jpg" alt="drink 1">
+                                    <p class="menu-items__sale">Sale <br> <span class="discount">30%</span></p>
                                     <p class="menu-items__details">Xem chi tiết</p>
                                     <div class="info">
                                         <div class="info__details">
                                             <h4>Special Drinks 1</h4>
                                             <p>Description here</p>
-                                            <h4>Price here</h4>
+                                            <h4><del>Price here</del> <span class="price-discount"></span></h4>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col l-4 m-6 s-12 padding-items--mobile">
+                            <div class="col l-4 m-6 s-12 padding-items--mobile menu-list__items-drink">
                                 <div class="menu-items">
                                     <img src="images/img-02.jpg" alt="drink 2">
                                     <p class="menu-items__details">Xem chi tiết</p>
@@ -234,7 +238,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col l-4 m-6 s-12 padding-items--mobile">
+                            <div class="col l-4 m-6 s-12 padding-items--mobile menu-list__items-drink">
                                 <div class="menu-items">
                                     <img src="images/img-03.jpg" alt="drink 3">
                                     <p class="menu-items__details">Xem chi tiết</p>
@@ -247,7 +251,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col l-4 m-6 s-12 padding-items--mobile">
+                            <div class="col l-4 m-6 s-12 padding-items--mobile menu-list__items-lunch">
                                 <div class="menu-items">
                                     <img src="images/img-04.jpg" alt="lunch 1">
                                     <p class="menu-items__details">Xem chi tiết</p>
@@ -260,7 +264,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col l-4 m-6 s-12 padding-items--mobile">
+                            <div class="col l-4 m-6 s-12 padding-items--mobile menu-list__items-lunch">
                                 <div class="menu-items">
                                     <img src="images/img-05.jpg" alt="lunch 2">
                                     <p class="menu-items__details">Xem chi tiết</p>
@@ -273,7 +277,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col l-4 m-6 s-12 padding-items--mobile">
+                            <div class="col l-4 m-6 s-12 padding-items--mobile menu-list__items-lunch">
                                 <div class="menu-items">
                                     <img src="images/img-06.jpg" alt="lunch 3">
                                     <p class="menu-items__details">Xem chi tiết</p>
@@ -286,7 +290,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col l-4 m-6 s-12 padding-items--mobile">
+                            <div
+                                class="col l-4 m-6 s-12 padding-items--mobile menu-list__items menu-list__items-dinner">
                                 <div class="menu-items">
                                     <img src="images/img-07.jpg" alt="dinner 1">
                                     <p class="menu-items__details">Xem chi tiết</p>
@@ -299,7 +304,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col l-4 m-6 s-12 padding-items--mobile">
+                            <div
+                                class="col l-4 m-6 s-12 padding-items--mobile menu-list__items menu-list__items-dinner">
                                 <div class="menu-items">
                                     <img src="images/img-08.jpg" alt="dinner 2">
                                     <p class="menu-items__details">Xem chi tiết</p>
@@ -312,7 +318,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col l-4 m-6 s-12 padding-items--mobile">
+                            <div
+                                class="col l-4 m-6 s-12 padding-items--mobile menu-list__items menu-list__items-dinner">
                                 <div class="menu-items">
                                     <img src="images/img-09.jpg" alt="dinner 3">
                                     <p class="menu-items__details">Xem chi tiết</p>
@@ -328,7 +335,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
         <!-- end special menu -->
 
