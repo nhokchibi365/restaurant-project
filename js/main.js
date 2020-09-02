@@ -10,8 +10,7 @@ $(document).ready(function () {
     }
   });
   $("#go-to-top").click(function () {
-    $("html, body").animate(
-      {
+    $("html, body").animate({
         scrollTop: 0,
       },
       2000
@@ -38,21 +37,21 @@ $(document).ready(function () {
     var choose = $(this).attr("index");
 
     if (choose == 0) {
-      $(".menu-list__items-drink").show(700);
-      $(".menu-list__items-lunch").show(700);
-      $(".menu-list__items-dinner").show(700);
+      $(".menu-list__items-drink").show(500);
+      $(".menu-list__items-lunch").show(500);
+      $(".menu-list__items-dinner").show(500);
     } else if (choose == 1) {
-      $(".menu-list__items-drink").show(700);
-      $(".menu-list__items-lunch").hide(700);
-      $(".menu-list__items-dinner").hide(700);
+      $(".menu-list__items-drink").show(500);
+      $(".menu-list__items-lunch").hide(500);
+      $(".menu-list__items-dinner").hide(500);
     } else if (choose == 2) {
-      $(".menu-list__items-drink").hide(700);
-      $(".menu-list__items-lunch").show(700);
-      $(".menu-list__items-dinner").hide(700);
+      $(".menu-list__items-drink").hide(500);
+      $(".menu-list__items-lunch").show(500);
+      $(".menu-list__items-dinner").hide(500);
     } else {
-      $(".menu-list__items-drink").hide(700);
-      $(".menu-list__items-lunch").hide(700);
-      $(".menu-list__items-dinner").show(700);
+      $(".menu-list__items-drink").hide(500);
+      $(".menu-list__items-lunch").hide(500);
+      $(".menu-list__items-dinner").show(500);
     }
   });
 });
@@ -74,7 +73,7 @@ for (let i = 0; i < numOfElement; i++) {
   priceArr[i] = parseFloat(priceArr[i]);
 
   var priceDiscount = document.getElementsByClassName("price-discount");
-  priceDiscount[i].innerText = priceArr[i] - discountArr[i] * 0.01 + "$";
+  priceDiscount[i].innerText = (priceArr[i] - (discountArr[i] * 0.01 * priceArr[i])).toFixed(2) + "$";
 }
 
 /* ..............................................
@@ -82,8 +81,7 @@ for (let i = 0; i < numOfElement; i++) {
 ............................................... */
 $(document).ready(function () {
   $(".scroll-to-contact").click(function () {
-    $("html, body").animate(
-      {
+    $("html, body").animate({
         scrollTop: $("#go-to-contact").offset().top,
       },
       2000
@@ -182,8 +180,7 @@ function bookingCheck() {
       if (willDelete) {
         swal(
           "Bạn đã đặt bàn thành công!",
-          "Cảm ơn bạn đã sử dụng dịch vụ của chúng tôi !",
-          {
+          "Cảm ơn bạn đã sử dụng dịch vụ của chúng tôi !", {
             icon: "success",
           }
         );

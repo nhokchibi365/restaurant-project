@@ -4,14 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thành Nam Restaurant - Đặt Bàn</title>
+    <title>Thành Nam Restaurant - Thực Đơn</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/icon.ico">
 
     <!-- Reset layout -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-
 
     <!-- Animate CSS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -118,111 +117,401 @@
         <!-- end header -->
 
         <!-- container-fluid -->
-        <section class="container-fluid--bg container-fluid--bg__chef" id="goback">
+        <section class="container-fluid--bg " id="goback">
             <div class="grid wide container-fluid--bg__content">
-                <h1 class="header-page" data-aos="fade-down">Đặt Bàn</h1>
+                <h1 class="header-page">Thực Đơn</h1>
             </div>
         </section>
         <!-- end container-fluid-->
 
-        <!-- book a table -->
-        <section class="grid wide">
-            <header class="headline">
-                <h2>Đặt Bàn</h2>
-                <p>Description here</p>
-            </header>
-            <form action="javascript:void(0);" class="row book-a-table">
-                <div class="col l-6 m-6 s-12 book-a-table__input" data-aos="zoom-in">
-                    <h2>Nhập thông tin ngày giờ</h2>
-                    <div class="row">
-                        <div class="col l-12 m-12 s-12 booking__items">
-                            <label for="date">Chọn ngày (<span class="required">*</span>)</label>
-                            <input type="date" name="date" id="date" placeholder="Nhập ngày" required>
-                        </div>
-                        <div class="col l-12 m-12 s-12 booking__items">
-                            <label for="date">Chọn giờ (<span class="required">*</span>)</label>
-                            <select required>
-                                <option value="time-booking" selected>8:00 AM</option>
-                                <option value="time-booking">8:30 AM</option>
-                                <option value="time-booking">9:00 AM</option>
-                                <option value="time-booking">9:30 AM</option>
-                                <option value="time-booking">10:00 AM</option>
-                                <option value="time-booking">10:30 AM</option>
-                                <option value="time-booking">11:00 AM</option>
-                                <option value="time-booking">12:00 AM</option>
-                                <option value="time-booking">13:00</option>
-                                <option value="time-booking">13:30</option>
-                                <option value="time-booking">14:00</option>
-                                <option value="time-booking">14:30</option>
-                                <option value="time-booking">15:00</option>
-                                <option value="time-booking">16:00</option>
-                                <option value="time-booking">16:30</option>
-                                <option value="time-booking">17:00</option>
-                                <option value="time-booking">18:00</option>
-                                <option value="time-booking">19:00</option>
-                                <option value="time-booking">20:00</option>
-                                <option value="time-booking">20:30</option>
-                                <option value="time-booking">21:00</option>
-                                <option value="time-booking">21:30</option>
-                            </select>
-                        </div>
-                        <div class="col l-12 m-12 s-12 booking__items">
-                            <label for="date">Chọn số lượng người (<span class="required">*</span>)</label>
-                            <select required>
-                                <option value="numOfPerson" selected>1 người</option>
-                                <option value="numOfPerson">2 người</option>
-                                <option value="numOfPerson">3 người</option>
-                                <option value="numOfPerson">4 người</option>
-                                <option value="numOfPerson">5 người</option>
-                                <option value="numOfPerson">Trên 5 người</option>
-                                <option value="numOfPerson">Trên 10 người</option>
-                                <option value="numOfPerson">Trên 15 người</option>
-                                <option value="numOfPerson">Trên 25 người</option>
-                                <option value="numOfPerson">Trên 30 người</option>
-                                <option value="numOfPerson">Trên 35 người</option>
-                                <option value="numOfPerson">Trên 40 người</option>
-                                <option value="numOfPerson">Trên 50 người</option>
-                            </select>
+        <!-- special menu -->
+        <section class="grid special-menu">
+            <div class="grid wide special-menu__content">
+                <header class="headline" data-aos="flip-down">
+                    <h2>Thực Đơn</h2>
+                </header>
+                <div class="row">
+                    <div class="col l-3 m-12 s-12" data-aos="fade-right">
+                        <ul class="navbar-menu">
+                            <li index="0"><a class="active navbar-link" href="javascript:;">Tất Cả</a></li>
+                            <li index="1"><a class="navbar-link" href="javascript:;">Thức Uống</a></li>
+                            <li index="2"><a class="navbar-link" href="javascript:;">Bữa Trưa</a></li>
+                            <li index="3"><a class="navbar-link" href="javascript:;">Bữa Tối</a></li>
+                        </ul>
+                    </div>
+                    <div class="col l-9 m-12 s-12" data-aos="fade-left">
+                        <div class="row fixed-row--margin menu-list">
+                            <!-- menu list drink -->
+                            <div class="col l-4 m-6 s-12 padding-items--mobile menu-list__items-drink">
+                                <div class="menu-items">
+                                    <img src="images/img-drink-01-tra.jpg" alt="drink 1">
+                                    <p class="menu-items__sale">Sale <br> <span class="discount">30%</span></p>
+                                    <p class="menu-items__details">Xem chi tiết</p>
+                                    <div class="info">
+                                        <div class="info__details">
+                                            <h4>Trà Quế Hương</h4>
+                                            <h4>Giá: <del><span class="price">1$</span></del><span
+                                                    class="price-discount"></span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 s-12 padding-items--mobile menu-list__items-drink">
+                                <div class="menu-items">
+                                    <img src="images/img-drink-02-travietquat.jpg" alt="drink 2">
+                                    <p class="menu-items__details">Xem chi tiết</p>
+                                    <div class="info">
+                                        <div class="info__details">
+                                            <h4>Trà Việt Quất</h4>
+                                            <h4>Giá: <span>1.1$</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 s-12 padding-items--mobile menu-list__items-drink">
+                                <div class="menu-items">
+                                    <img src="images/img-drink-03-ruouvangchile.jpg" alt="drink 3">
+                                    <p class="menu-items__sale">Sale <br> <span class="discount">10%</span></p>
+                                    <p class="menu-items__details">Xem chi tiết</p>
+                                    <div class="info">
+                                        <div class="info__details">
+                                            <h4>Rượu Vang Chile</h4>
+                                            <h4>Giá: <del><span class="price">12$</span></del><span
+                                                    class="price-discount"></span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 s-12 padding-items--mobile menu-list__items-drink">
+                                <div class="menu-items">
+                                    <img src="images/img-drink-04-whisky.jpg" alt="drink 4">
+                                    <p class="menu-items__details">Xem chi tiết</p>
+                                    <div class="info">
+                                        <div class="info__details">
+                                            <h4>Rượu Whisky</h4>
+                                            <h4>Giá: <span>22%</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 s-12 padding-items--mobile menu-list__items-drink">
+                                <div class="menu-items">
+                                    <img src="images/img-drink-05-ruouvangdo.jpg" alt="drink 5">
+                                    <p class="menu-items__details">Xem chi tiết</p>
+                                    <div class="info">
+                                        <div class="info__details">
+                                            <h4>Rượu Vang Đỏ</h4>
+                                            <h4>Giá: <span>17$</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 s-12 padding-items--mobile menu-list__items-drink">
+                                <div class="menu-items">
+                                    <img src="images/img-drink-06-coktail-mojito.jpg" alt="drink 6">
+                                    <p class="menu-items__details">Xem chi tiết</p>
+                                    <div class="info">
+                                        <div class="info__details">
+                                            <h4>Coktail Mojito</h4>
+                                            <h4>Giá: <span>3.3$</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 s-12 padding-items--mobile menu-list__items-drink">
+                                <div class="menu-items">
+                                    <img src="images/img-drink-07-coktail-bloody-mary.jpg" alt="drink 7">
+                                    <p class="menu-items__sale">Sale <br> <span class="discount">8%</span></p>
+                                    <p class="menu-items__details">Xem chi tiết</p>
+                                    <div class="info">
+                                        <div class="info__details">
+                                            <h4>Coktail Bloody Mary</h4>
+                                            <h4>Giá: <del><span class="price">2.6$</span></del><span
+                                                    class="price-discount"></span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 s-12 padding-items--mobile menu-list__items-drink">
+                                <div class="menu-items">
+                                    <img src="images/img-drink-08-Cucumber-Gin-Fizz.jpg" alt="drink 8">
+                                    <p class="menu-items__details">Xem chi tiết</p>
+                                    <div class="info">
+                                        <div class="info__details">
+                                            <h4>Cucumber Gin Fizz</h4>
+                                            <h4>Giá: <span>2.1$</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 s-12 padding-items--mobile menu-list__items-drink">
+                                <div class="menu-items">
+                                    <img src="images/img-drink-09-orange-juice.jpg" alt="drink 9">
+                                    <p class="menu-items__details">Xem chi tiết</p>
+                                    <div class="info">
+                                        <div class="info__details">
+                                            <h4>Nước Cam</h4>
+                                            <h4>Giá: <span>1.3$</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end menu list drink -->
+
+                            <!-- menu list lunch -->
+                            <div class="col l-4 m-6 s-12 padding-items--mobile menu-list__items-lunch">
+                                <div class="menu-items">
+                                    <img src="images/img-lunch-01-chemChepNewZealandHapThai.jpg" alt="lunch 1">
+                                    <p class="menu-items__sale">Sale <br> <span class="discount">5%</span></p>
+                                    <p class="menu-items__details">Xem chi tiết</p>
+                                    <div class="info">
+                                        <div class="info__details">
+                                            <h4>Chem Chép NewZealand Hấp Thái</h4>
+                                            <h4>Giá: <del><span class="price">2.2$</span></del><span
+                                                    class="price-discount"></span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 s-12 padding-items--mobile menu-list__items-lunch">
+                                <div class="menu-items">
+                                    <img src="images/img-lunch-02-heoSuaQuay.jpg" alt="lunch 2">
+                                    <p class="menu-items__details">Xem chi tiết</p>
+                                    <div class="info">
+                                        <div class="info__details">
+                                            <h4>Heo Sữa Quay</h4>
+                                            <h4>Giá: <span>14$</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 s-12 padding-items--mobile menu-list__items-lunch">
+                                <div class="menu-items">
+                                    <img src="images/img-lunch-03-banhBao.jpg" alt="lunch 3">
+                                    <p class="menu-items__details">Xem chi tiết</p>
+                                    <div class="info">
+                                        <div class="info__details">
+                                            <h4>Bánh Bao</h4>
+                                            <h4>Giá: <span>0.5$</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 s-12 padding-items--mobile menu-list__items-lunch">
+                                <div class="menu-items">
+                                    <img src="images/img-lunch-04-ChimBoCauHamHatSen.jpg" alt="lunch 4">
+                                    <p class="menu-items__details">Xem chi tiết</p>
+                                    <div class="info">
+                                        <div class="info__details">
+                                            <h4>Chim Bồ Câu Hầm Hạt Sen</h4>
+                                            <h4>Giá: <span>7.4$</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 s-12 padding-items--mobile menu-list__items-lunch">
+                                <div class="menu-items">
+                                    <img src="images/img-lunch-05-TomHumNuongPhoMai.jpg" alt="lunch 5">
+                                    <p class="menu-items__sale">Sale <br> <span class="discount">13%</span></p>
+                                    <p class="menu-items__details">Xem chi tiết</p>
+                                    <div class="info">
+                                        <div class="info__details">
+                                            <h4>Tôm Hùm Nướng Phô Mai</h4>
+                                            <h4>Giá: <del><span class="price">8.6$</span></del><span
+                                                    class="price-discount"></span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 s-12 padding-items--mobile menu-list__items-lunch">
+                                <div class="menu-items">
+                                    <img src="images/img-lunch-06-BoSteakSotRuouVangDo.jpg" alt="lunch 6">
+                                    <p class="menu-items__details">Xem chi tiết</p>
+                                    <div class="info">
+                                        <div class="info__details">
+                                            <h4>Bò Steak Sốt Rượu Vang</h4>
+                                            <h4>Giá: <span>9.3$</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 s-12 padding-items--mobile menu-list__items-lunch">
+                                <div class="menu-items">
+                                    <img src="images/img-lunch-07-GoiOcVoiVoi.jpg" alt="lunch 7">
+                                    <p class="menu-items__sale">Sale <br> <span class="discount">5%</span></p>
+                                    <p class="menu-items__details">Xem chi tiết</p>
+                                    <div class="info">
+                                        <div class="info__details">
+                                            <h4>Gỏi Ốc Vòi Voi</h4>
+                                            <h4>Giá: <del><span class="price">3.7$</span></del><span
+                                                    class="price-discount"></span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 s-12 padding-items--mobile menu-list__items-lunch">
+                                <div class="menu-items">
+                                    <img src="images/img-lunch-08-caTuyetPhiLeApChao.jpg" alt="lunch 8">
+                                    <p class="menu-items__details">Xem chi tiết</p>
+                                    <div class="info">
+                                        <div class="info__details">
+                                            <h4>Cá Tuyết Phi Lê Áp Chảo</h4>
+                                            <h4>Giá: <span>4.8$</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 s-12 padding-items--mobile menu-list__items-lunch">
+                                <div class="menu-items">
+                                    <img src="images/img-lunch-09-BaoNguViCa.jpg" alt="lunch 9">
+                                    <p class="menu-items__sale">Sale <br> <span class="discount">5%</span></p>
+                                    <p class="menu-items__details">Xem chi tiết</p>
+                                    <div class="info">
+                                        <div class="info__details">
+                                            <h4>Bào Ngư Vi Cá</h4>
+                                            <h4>Giá: <del><span class="price">8.2$</span></del><span
+                                                    class="price-discount"></span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end menu list lunch -->
+
+                            <!-- menu list dinner -->
+                            <div class="col l-4 m-6 s-12 padding-items--mobile menu-list__items-dinner">
+                                <div class="menu-items">
+                                    <img src="images/img-dinner-01-cuaBotChienGion.jpg" alt="dinner 1">
+                                    <p class="menu-items__details">Xem chi tiết</p>
+                                    <div class="info">
+                                        <div class="info__details">
+                                            <h4>Cua Bột Xào Chiên Giòn</h4>
+                                            <h4>Giá: <span>6$</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 s-12 padding-items--mobile menu-list__items-dinner">
+                                <div class="menu-items">
+                                    <img src="images/img-dinner-02-GoiXoai.jpg" alt="dinner 2">
+                                    <p class="menu-items__sale">Sale <br> <span class="discount">15%</span></p>
+                                    <p class="menu-items__details">Xem chi tiết</p>
+                                    <div class="info">
+                                        <div class="info__details">
+                                            <h4>Gỏi Xoài</h4>
+                                            <h4>Giá: <del><span class="price">6$</span></del><span
+                                                    class="price-discount"></span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 s-12 padding-items--mobile menu-list__items-dinner">
+                                <div class="menu-items">
+                                    <img src="images/img-dinner-03-chanGioNamHuong.jpg" alt="dinner 3">
+                                    <p class="menu-items__details">Xem chi tiết</p>
+                                    <div class="info">
+                                        <div class="info__details">
+                                            <h4>Chân Giò Nấm Hương</h4>
+                                            <h4>Giá: <span>4$</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 s-12 padding-items--mobile menu-list__items-dinner">
+                                <div class="menu-items">
+                                    <img src="images/img-dinner-04-lauVit.jpg" alt="dinner 4">
+                                    <p class="menu-items__sale">Sale <br> <span class="discount">15%</span></p>
+                                    <p class="menu-items__details">Xem chi tiết</p>
+                                    <div class="info">
+                                        <div class="info__details">
+                                            <h4>Lẩu Vịt</h4>
+                                            <h4>Giá: <del><span class="price">6.3$</span></del><span
+                                                    class="price-discount"></span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 s-12 padding-items--mobile menu-list__items-dinner">
+                                <div class="menu-items">
+                                    <img src="images/img-dinner-05-lauThai.jpg" alt="dinner 5">
+                                    <p class="menu-items__details">Xem chi tiết</p>
+                                    <div class="info">
+                                        <div class="info__details">
+                                            <h4>Lẩu Thái</h4>
+                                            <h4>Giá: <span>7.9$</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 s-12 padding-items--mobile menu-list__items-dinner">
+                                <div class="menu-items">
+                                    <img src="images/img-dinner-06-cuaSotOtSingapore.jpg" alt="dinner 6">
+                                    <p class="menu-items__details">Xem chi tiết</p>
+                                    <div class="info">
+                                        <div class="info__details">
+                                            <h4>Cua Sốt Ớt Singapore</h4>
+                                            <h4>Giá: <span>12.3$</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 s-12 padding-items--mobile menu-list__items-dinner">
+                                <div class="menu-items">
+                                    <img src="images/img-dinner-07-suonBoMyNuong.jpg" alt="dinner 7">
+                                    <p class="menu-items__details">Xem chi tiết</p>
+                                    <div class="info">
+                                        <div class="info__details">
+                                            <h4>Sườn Bò Mỹ Nướng</h4>
+                                            <h4>Giá: <span>5.4$</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 s-12 padding-items--mobile menu-list__items-dinner">
+                                <div class="menu-items">
+                                    <img src="images/img-dinner-08-boBitTet.jpg" alt="dinner 8">
+                                    <p class="menu-items__details">Xem chi tiết</p>
+                                    <div class="info">
+                                        <div class="info__details">
+                                            <h4>Bò Bít Tết</h4>
+                                            <h4>Giá: <span>8.6$</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 s-12 padding-items--mobile menu-list__items-dinner">
+                                <div class="menu-items">
+                                    <img src="images/img-dinner-09-BoCuonSotChuaNgot.jpg" alt="dinner 9">
+                                    <p class="menu-items__sale">Sale <br> <span class="discount">14%</span></p>
+                                    <p class="menu-items__details">Xem chi tiết</p>
+                                    <div class="info">
+                                        <div class="info__details">
+                                            <h4>Bò Cuộn Sốt Chua Ngọt</h4>
+                                            <h4>Giá: <del><span class="price">6.8$</span></del><span
+                                                    class="price-discount"></span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end menu list dinner -->
                         </div>
                     </div>
                 </div>
-                <div class="col l-6 m-6 s-12 book-a-table__info" data-aos="zoom-in">
-                    <h2>Nhập thông tin liên hệ</h2>
-                    <div class="row">
-                        <div class="col l-12 m-12 s-12 booking__items">
-                            <label for="name">Nhập tên (<span class="required">*</span>)</label>
-                            <input type="text" name="name" id="name" placeholder="Nhập tên" required>
-                        </div>
-                        <div class="col l-12 m-12 s-12 booking__items">
-                            <label for="address">Nhập địa chỉ (<span class="required">*</span>)</label>
-                            <input type="text" name="address" id="address" placeholder="Nhập địa chỉ" required>
-                        </div>
-                        <div class="col l-12 m-12 s-12 booking__items">
-                            <label for="phone">Nhập số điện thoại (<span class="required">*</span>)</label>
-                            <input type="number" name="phone" id="phone" placeholder="Nhập số điện thoại" required>
-                        </div>
-                    </div>
-                </div>
-                <div class="col l-2 m-4 s-12 book-a-table__submit" data-aos="fade-up" data-aos-delay="300">
-                    <input type="submit" value="Đặt Bàn" onclick="bookingCheck()">
-                </div>
-            </form>
         </section>
-        <!-- end chef -->
+        <!-- end special menu -->
 
         <!-- footer -->
-        <footer class="footer" id="go-to-contact">
+        <footer class="footer">
             <!-- footer top -->
             <div class="footer__top">
                 <div class="grid wide">
                     <div class="row">
-                        <div class="col l-6 m-6 s-0" data-aos="fade-right">
+                        <div class="col l-6 m-6 s-0">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9356596756593!2d106.6756248153521!3d10.816235861414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e19559e523%3A0x8e4133bdb1373cc9!2zMzcxIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1597454228030!5m2!1svi!2s"
                                 width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""
                                 aria-hidden="false" tabindex="0"></iframe>
                         </div>
-                        <div class="col l-6 m-6 s-0" data-aos="fade-left">
+                        <div class="col l-6 m-6 s-0">
                             <div class="row">
                                 <div class="col l-12 m-12 footer__top-right">
                                     <div class="footer__top-right--items">
@@ -249,7 +538,7 @@
             </div>
 
             <!-- footer mid -->
-            <div class="footer__mid" data-aos="fade-up">
+            <div class="footer__mid">
                 <div class="footer__mid-bg">
                     <div class="grid wide">
                         <div class="footer__mid-content">
@@ -259,11 +548,9 @@
                                         <h3>Về Chúng Tôi</h3>
                                     </div>
                                     <div class="footer__mid-items--details">
-                                        <p>Integer cursus scelerisque ipsum id efficitur. Donec a dui fringilla, gravida
-                                            lorem
-                                            ac,
-                                            semper magna. Aenean rhoncus ac lectus a interdum. Vivamus semper posuere
-                                            dui.
+                                        <p>Sự hài lòng của quý khách là niềm vinh hạnh của chúng tôi. Chúc quý khách có
+                                            1 bữa tiệc ngon miệng, chúng tôi luôn đồng hành và phục vụ hết mình. Xin cảm
+                                            ơn !!!
                                         </p>
                                     </div>
                                 </div>
@@ -273,8 +560,7 @@
                                     </div>
                                     <div class="footer__mid-items--details">
                                         <form action="javascript:void(0);">
-                                            <input type="email" placeholder="Nhập địa chỉ Email..." id="register"
-                                                required>
+                                            <input type="email" placeholder="Nhập địa chỉ Email..." id="register">
                                             <input type="submit" value="Đăng Ký" onclick="registerCheck()">
                                         </form>
                                         <ul class="social-items">
@@ -317,9 +603,9 @@
                                     </div>
                                     <div class="footer__mid-items--details">
                                         <p>Thứ Hai: Đóng Cửa</p>
-                                        <p>Thứ Ba - Thứ Tư: 9:00 AM - 10:00 PM</p>
-                                        <p>Thứ Năm - Thứ Sáu: 9:00AM - 10:00 PM</p>
-                                        <p>Thứ Bảy - Chủ Nhật: 5:00 PM - 10:00 PM</p>
+                                        <p>Thứ Ba - Thứ Tư: 9:AM - 10:PM</p>
+                                        <p>Thứ Năm - Thứ Sáu: 9:AM - 10:PM</p>
+                                        <p>Thứ Bảy - Chủ Nhật: 5:PM - 10:PM</p>
                                     </div>
                                 </div>
                             </div>
@@ -329,7 +615,7 @@
             </div>
 
             <!-- footer bottom -->
-            <div class="footer__bottom">
+            <div class="footer__bottom" id="go-to-contact">
                 <p>Copyright &copy; 2020 All Rights Reserved</p>
                 <p>Design By Thành Nam</p>
                 <a id="go-to-top" href="#goback"><i class="fas fa-angle-up"></i></a>

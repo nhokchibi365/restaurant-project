@@ -3,8 +3,7 @@
 -----------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300;1,700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&display=swap");
 /*----------------------------------------------
     IMPORT FILES
 -----------------------------------------------*/
@@ -179,7 +178,7 @@ a.btn:hover {
   ---------------------------------------------*/
 .special-menu {
   background: url(../images/SpecialMenu-bg-pc.jpg) repeat-y;
-  background-size: 100% 100%;
+  background-size: 100%;
   margin-top: 6rem;
 }
 
@@ -242,8 +241,9 @@ a.btn:hover {
   width: 45%;
   height: auto;
 
-  padding: 0.5rem 0;
+  padding: 0 0.5rem;
   border: 0;
+  white-space: nowrap;
   text-align: center;
 
   color: var(--white-color);
@@ -346,7 +346,8 @@ a.btn:hover {
 }
 
 .info__details h4:first-child {
-  padding: 2rem 0 1rem;
+  text-transform: capitalize;
+  padding: 2rem 2rem 1rem;
 }
 
 .info__details .price-discount {
@@ -356,6 +357,10 @@ a.btn:hover {
 /*----------------------------------------------
   Garelly
   ---------------------------------------------*/
+.gallery {
+  padding: 5rem 0;
+}
+
 .gallery-items {
   padding: 1rem;
   overflow: hidden;
@@ -406,7 +411,7 @@ a.btn:hover {
 }
 
 .carousel-items__info h3 {
-  font-size: 3.6rem;
+  font-size: 3rem;
   padding: 1rem 0;
 
   color: var(--primary-color);
@@ -426,21 +431,22 @@ a.btn:hover {
   background: url(../images/slider-01.jpg) no-repeat fixed center center;
 
   width: 100%;
-  height: 75vh;
+  height: 100vh;
 
-  padding: 1rem 0;
-
-  position: relative;
+  padding: 1rem;
 }
 
 .container-fluid--bg::before {
   content: "";
+
   background: var(--black-color);
-  opacity: 0.5;
+  opacity: 0.6;
+
   position: absolute;
   z-index: 1;
   left: 0;
   top: 0;
+
   width: 100%;
   height: 100%;
 }
@@ -457,10 +463,11 @@ a.btn:hover {
 
 .header-page {
   font-size: 7.2rem;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  font-family: "Charmonman", cursive;
 
   color: var(--yellow-color);
+
+  animation: zoomIn 1 2s;
 }
 
 .gallery {
@@ -476,7 +483,7 @@ a.btn:hover {
 }
 /*  container-chef */
 .container-chef {
-  padding: 0 0 3rem;
+  padding: 5rem 0 3rem;
 }
 
 .our-team {
@@ -668,6 +675,10 @@ a.btn:hover {
 /*--------------------------------------
   Blog Page
   --------------------------------------*/
+.container-fluid--bg__blog {
+  background: url(../images/slider-03.jpg) no-repeat fixed center center;
+}
+
 .blog {
   padding: 7rem 0 0;
 }
@@ -735,6 +746,7 @@ a.btn:hover {
 .blog-items__details h3 {
   font-size: 2.4rem;
   padding: 1rem 0;
+  text-transform: initial;
 }
 
 .blog-items__details a {
