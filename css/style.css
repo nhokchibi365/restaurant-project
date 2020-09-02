@@ -2,13 +2,15 @@
   Header
  ------------------------------------- */
 .header {
-  transition: all ease 0.3s;
-}
-
-.header-background {
   background: var(--white-color);
   box-shadow: 0 0 3rem var(--shadow-color);
   border-radius: 0 0 10rem 10rem;
+  padding: 0.8rem 0;
+  transition: padding ease 0.3s;
+}
+
+.header-padding {
+  padding: 0;
 }
 
 .header.fixed-top {

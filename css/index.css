@@ -341,13 +341,16 @@ a.btn:hover {
   padding: 1rem;
 }
 
-.info__details h4:nth-child(3) {
-  border-top: 0.1rem dashed var(--black-color);
-  padding: 1rem 0;
+.info__details h4 {
+  text-align: center;
 }
 
-.info__details p {
-  padding: 0.5rem 0;
+.info__details h4:first-child {
+  padding: 2rem 0 1rem;
+}
+
+.info__details .price-discount {
+  padding: 0 1rem;
 }
 
 /*----------------------------------------------

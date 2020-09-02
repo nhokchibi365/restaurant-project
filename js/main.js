@@ -10,7 +10,8 @@ $(document).ready(function () {
     }
   });
   $("#go-to-top").click(function () {
-    $("html, body").animate({
+    $("html, body").animate(
+      {
         scrollTop: 0,
       },
       2000
@@ -23,24 +24,9 @@ $(document).ready(function () {
   Padding header when scroll
 ............................................... */
 $(document).ready(function () {
-  // change logo
-  $(".navbar__left a img:first-child").hide();
-  $(".navbar__left a img:nth-child(2)").show();
-
-  $(".navbar-btn > i").css("color", "var(--white-color)"); // change icon tablet - mobile
-
   $(window).on("scroll", function () {
-    if ($(this).scrollTop() > 100) {
-      $(".header").addClass("header-background");
-      $(".navbar__left a img:first-child").show();
-      $(".navbar__left a img:nth-child(2)").hide();
-      $(".navbar-btn > i").css("color", "var(--black-color)"); // change icon tablet - mobile
-    } else {
-      $(".header").removeClass("header-background");
-      $(".navbar__left a img:first-child").hide();
-      $(".navbar__left a img:nth-child(2)").show();
-      $(".navbar-btn > i").css("color", "var(--white-color)"); // change icon tablet - mobile
-    }
+    if ($(this).scrollTop() > 100) $(".header").addClass("header-padding");
+    else $(".header").removeClass("header-padding");
   });
 });
 
@@ -72,11 +58,32 @@ $(document).ready(function () {
 });
 
 /* ..............................................
+  Discount
+............................................... */
+var numOfElement = document.getElementsByClassName("discount").length;
+var discountArr = [numOfElement];
+var priceArr = [numOfElement];
+
+for (let i = 0; i < numOfElement; i++) {
+  var saleNum = document.getElementsByClassName("discount");
+  discountArr[i] = saleNum[i].innerText;
+  discountArr[i] = parseFloat(discountArr[i]);
+
+  var priceNum = document.getElementsByClassName("price");
+  priceArr[i] = priceNum[i].innerText;
+  priceArr[i] = parseFloat(priceArr[i]);
+
+  var priceDiscount = document.getElementsByClassName("price-discount");
+  priceDiscount[i].innerText = priceArr[i] - discountArr[i] * 0.01 + "$";
+}
+
+/* ..............................................
   Scroll to contact
 ............................................... */
 $(document).ready(function () {
   $(".scroll-to-contact").click(function () {
-    $("html, body").animate({
+    $("html, body").animate(
+      {
         scrollTop: $("#go-to-contact").offset().top,
       },
       2000
@@ -175,7 +182,8 @@ function bookingCheck() {
       if (willDelete) {
         swal(
           "Bạn đã đặt bàn thành công!",
-          "Cảm ơn bạn đã sử dụng dịch vụ của chúng tôi !", {
+          "Cảm ơn bạn đã sử dụng dịch vụ của chúng tôi !",
+          {
             icon: "success",
           }
         );
