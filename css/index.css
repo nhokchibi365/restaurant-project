@@ -417,6 +417,10 @@ a.btn:hover {
   color: var(--primary-color);
 }
 
+.carousel-items__info h4 {
+  text-transform: initial;
+}
+
 .carousel-items__info p {
   /* text-align: justify; */
   text-align: center;
@@ -433,7 +437,7 @@ a.btn:hover {
   width: 100%;
   height: 100vh;
 
-  padding: 1rem;
+  padding: 1rem 0 0;
 }
 
 .container-fluid--bg::before {
@@ -794,6 +798,7 @@ a.btn:hover {
 
 .blog-items__details a {
   color: var(--text-color);
+  text-transform: initial;
 }
 
 .blog-items__details p {
