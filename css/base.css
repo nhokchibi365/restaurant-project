@@ -1,7 +1,7 @@
 :root {
   --primary-color: #f05123;
   --blog-primary-color: #ec5a31;
-  --secondary-color: #00438b;
+  --secondary-color: #0084ff;
   --yellow-color: #faff6c;
   --light-primary-color: #cfa671b2;
   --white-color: #fff;
@@ -10,6 +10,8 @@
   --text-color: #333;
   --overlay-mobile-color: #000000e0;
   --gray-color: #cccbcb;
+  --error-color: #f33a58;
+  --gray-input-color: #b3b3b3;
   --light-blue-color: #498fe64a;
   --red-color: #f00;
 }

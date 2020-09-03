@@ -612,34 +612,85 @@ a.btn:hover {
   padding: 4rem 0;
 }
 
+.form-group {
+  display: flex;
+  margin-bottom: 16px;
+  flex-direction: column;
+  padding: 0 3rem;
+}
+
+.form-label,
+.form-message {
+  text-align: left;
+}
+
+.form-label {
+  display: block;
+  font-weight: 700;
+  padding: 1rem 0;
+  line-height: 1.8rem;
+}
+
+.form-control {
+  height: 6rem;
+  padding: 0 2rem;
+  border: 0.1rem solid var(--gray-input-color);
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+.form-control:hover {
+  border-color: var(--primary-color);
+}
+
+.form-group.invalid .form-control {
+  border-color: var(--error-color);
+}
+
+.form-group.invalid .form-message {
+  color: var(--error-color);
+}
+
+.form-message {
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  padding: 1rem 0 0;
+}
+
+.form-submit {
+  outline: none;
+  background-color: var(--primary-color);
+  padding: 2rem 3rem;
+  color: #fff;
+  border: none;
+  width: 100%;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+.form-submit:hover {
+  background-color: var(--secondary-color);
+}
+
+.required {
+  color: var(--red-color);
+}
+
 .book-a-table__input,
 .book-a-table__info {
   padding: 2rem 0 0;
 }
 
-.book-a-table h2 {
+.book-a-table__input h3,
+.book-a-table__info h3 {
+  padding: 2rem 0;
   text-align: center;
-}
-
-.book-a-table label {
-  display: block;
-  padding: 1rem 0;
-}
-
-.book-a-table span {
-  color: var(--red-color);
 }
 
 .book-a-table input,
 .book-a-table select {
-  display: block;
   width: 100%;
-  padding: 1.5rem 0;
-}
-
-.book-a-table input[type="text"],
-.book-a-table input[type="number"] {
-  padding: 1.7rem 2rem;
 }
 
 .book-a-table input:focus {
@@ -657,14 +708,6 @@ a.btn:hover {
 
   cursor: pointer;
   transition: all 0.3s;
-}
-
-.book-a-table input[type="submit"]:hover {
-  background: var(--secondary-color);
-}
-
-.booking__items {
-  padding: 1rem 3rem;
 }
 
 .book-a-table__submit {

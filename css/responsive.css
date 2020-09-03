@@ -311,7 +311,7 @@
   /*--------------------------------------
     Book a table Page
     --------------------------------------*/
-  .book-a-table input[type="submit"] {
+  .form-submit {
     margin: 2rem auto;
     width: 50%;
   }

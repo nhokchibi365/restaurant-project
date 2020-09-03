@@ -130,18 +130,19 @@
                 <h2>Đặt Bàn</h2>
                 <p>Hãy lựa chọn thời gian thích hợp</p>
             </header>
-            <form action="javascript:void(0);" class="row book-a-table">
-                <div class="col l-6 m-6 s-12 book-a-table__input" data-aos="zoom-in">
-                    <h2>Nhập thông tin ngày giờ</h2>
+            <form action="javascript:void(0);" class="row book-a-table" id="form-1">
+                <div class="col l-6 m-6 s-12 book-a-table__input">
+                    <h3>Nhập thông tin ngày giờ</h3>
                     <div class="row">
-                        <div class="col l-12 m-12 s-12 booking__items">
-                            <label for="date">Chọn ngày (<span class="required">*</span>)</label>
-                            <input type="date" name="date" id="date" placeholder="Nhập ngày" required>
+                        <div class="col l-12 m-12 s-12 form-group">
+                            <label for="date" class="form-label">Chọn ngày (<span class="required">*</span>)</label>
+                            <input id="date" name="date" type="date" class="form-control">
+                            <span class="form-message"></span>
                         </div>
-                        <div class="col l-12 m-12 s-12 booking__items">
-                            <label for="date">Chọn giờ (<span class="required">*</span>)</label>
-                            <select required>
-                                <option value="time-booking" selected>8:00 AM</option>
+                        <div class="col l-12 m-12 s-12 form-group">
+                            <label for="hours" class="form-label">Chọn giờ (<span class="required">*</span>)</label>
+                            <select id="hours" class="form-control">
+                                <option value="time-booking">8:00 AM</option>
                                 <option value="time-booking">8:30 AM</option>
                                 <option value="time-booking">9:00 AM</option>
                                 <option value="time-booking">9:30 AM</option>
@@ -164,11 +165,13 @@
                                 <option value="time-booking">21:00</option>
                                 <option value="time-booking">21:30</option>
                             </select>
+                            <span class="form-message"></span>
                         </div>
-                        <div class="col l-12 m-12 s-12 booking__items">
-                            <label for="date">Chọn số lượng người (<span class="required">*</span>)</label>
-                            <select required>
-                                <option value="numOfPerson" selected>1 người</option>
+                        <div class="col l-12 m-12 s-12 form-group">
+                            <label for="persons" class="form-label">Chọn số lượng người (<span
+                                    class="required">*</span>)</label>
+                            <select id="persons" class="form-control">
+                                <option value="numOfPerson">1 người</option>
                                 <option value="numOfPerson">2 người</option>
                                 <option value="numOfPerson">3 người</option>
                                 <option value="numOfPerson">4 người</option>
@@ -182,28 +185,38 @@
                                 <option value="numOfPerson">Trên 40 người</option>
                                 <option value="numOfPerson">Trên 50 người</option>
                             </select>
+                            <span class="form-message"></span>
                         </div>
                     </div>
                 </div>
-                <div class="col l-6 m-6 s-12 book-a-table__info" data-aos="zoom-in">
-                    <h2>Nhập thông tin liên hệ</h2>
+                <div class="col l-6 m-6 s-12 book-a-table__info">
+                    <h3>Nhập thông tin liên hệ</h3>
                     <div class="row">
-                        <div class="col l-12 m-12 s-12 booking__items">
-                            <label for="name">Nhập tên (<span class="required">*</span>)</label>
-                            <input type="text" name="name" id="name" placeholder="Nhập tên" required>
+                        <div class="col l-12 m-12 s-12 form-group">
+                            <label for="fullname" class="form-label">Tên đầy đủ (<span
+                                    class="required">*</span>)</label>
+                            <input id="fullname" name="fullname" type="text" placeholder="VD: Nguyễn Thành Nam"
+                                class="form-control">
+                            <span class="form-message"></span>
                         </div>
-                        <div class="col l-12 m-12 s-12 booking__items">
-                            <label for="address">Nhập địa chỉ (<span class="required">*</span>)</label>
-                            <input type="text" name="address" id="address" placeholder="Nhập địa chỉ" required>
+                        <div class="col l-12 m-12 s-12 form-group">
+                            <label for="address" class="form-label">Nhập địa chỉ (<span
+                                    class="required">*</span>)</label>
+                            <input id="address" name="address" type="text" placeholder="Nhập địa chỉ"
+                                class="form-control">
+                            <span class="form-message"></span>
                         </div>
-                        <div class="col l-12 m-12 s-12 booking__items">
-                            <label for="phone">Nhập số điện thoại (<span class="required">*</span>)</label>
-                            <input type="number" name="phone" id="phone" placeholder="Nhập số điện thoại" required>
+                        <div class="col l-12 m-12 s-12 form-group">
+                            <label for="phone" class="form-label">Nhập số điện thoại (<span
+                                    class="required">*</span>)</label>
+                            <input id="phone" type="number" name="phone" type="text" placeholder="Nhập số điện thoại"
+                                class="form-control">
+                            <span class="form-message"></span>
                         </div>
                     </div>
                 </div>
                 <div class="col l-2 m-4 s-12 book-a-table__submit" data-aos="fade-up" data-aos-delay="300">
-                    <input type="submit" value="Đặt Bàn" onclick="bookingCheck()">
+                    <button class="form-submit" onclick="bookingCheck()">Đặt Bàn</button>
                 </div>
             </form>
         </section>
@@ -373,6 +386,29 @@
 
     <!-- All File JS -->
     <script src="js/main.js"></script>
+    <script src="js/form-validation.js"></script>
+
+    <!-- Form Validation -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            Validator({
+                form: '#form-1',
+                formGroupSelector: '.form-group',
+                errorSelector: '.form-message',
+                rules: [
+                    Validator.isRequired('#date', 'Vui lòng nhập thời gian'),
+                    Validator.isRequired('#address', 'Vui lòng nhập địa chỉ của bạn'),
+                    Validator.isRequired('#fullname', 'Vui lòng nhập tên đầy đủ của bạn'),
+                    Validator.isRequired('#address', 'Vui lòng nhập địa chỉ của bạn'),
+                    Validator.minLength('#phone', 10),
+                ],
+                onSubmit: function (data) {
+                    // Call API
+                    console.log(data);
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

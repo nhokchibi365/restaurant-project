@@ -160,7 +160,7 @@ baguetteBox.run(".gallery");
     ............................................... */
 function bookingCheck() {
   var date = document.getElementById("date");
-  var name = document.getElementById("name");
+  var name = document.getElementById("fullname");
   var address = document.getElementById("address");
   var phone = document.getElementById("phone");
 
@@ -189,7 +189,7 @@ function bookingCheck() {
       }
     });
   } else {
-    swal("Xảy ra lỗi !", "Bạn chưa nhập thông tin !", "error");
+    swal("Xảy ra lỗi !", "Bạn chưa nhập thông tin hoặc sai thông tin !", "error");
   }
 }
 
