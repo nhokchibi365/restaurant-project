@@ -204,7 +204,7 @@ a.btn:hover {
 
   color: var(--primary-color);
 
-  padding: 2rem 1rem;
+  padding: 2rem 1rem !important;
   border-radius: 1rem;
 
   transition: all ease 0.3s;
@@ -725,6 +725,7 @@ a.btn:hover {
 
 .blog-items {
   overflow: hidden;
+  cursor: pointer;
   box-shadow: 0 1rem 0.8rem var(--shadow-color);
 }
 
@@ -968,7 +969,7 @@ a.btn:hover {
 .recent-post__menu-items {
   display: flex;
   align-items: center;
-
+  cursor: pointer;
   padding: 1rem 1rem 1rem 0;
 }
 

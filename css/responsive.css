@@ -76,8 +76,11 @@
     margin: 0 2rem 0 4rem;
   }
 
+  .exit-overlay label {
+    padding: 2rem 0;
+  }
   /*---------------------
-    Container-fluid
+    Container-fluid 
    ---------------------*/
   .container-fluid__content > p:nth-child(2) {
     font-size: 2.4rem;
@@ -92,7 +95,6 @@
   ----------------------*/
   .special-menu {
     background: url(../images/SpecialMenu-bg-tablet.jpg) repeat-y;
-    background-size: cover;
   }
 
   .headline {
@@ -109,8 +111,8 @@
     padding: 0 1rem;
   }
 
-  .navbar-menu > li > a {
-    padding: 1rem 2rem;
+  .navbar-menu > li a {
+    padding: 1rem 2rem !important;
     border-radius: 4rem;
   }
 
@@ -175,16 +177,23 @@
 
   .navbar-list a {
     border-radius: 1rem;
-    padding: 2rem 1.5rem;
+
     margin-left: 0;
     white-space: nowrap;
     color: var(--white-color);
+  }
+
+  .navbar-list a:not(.exit-overlay) {
+    padding: 2rem 1.5rem;
   }
 
   .navbar-link i {
     margin: 0 2rem 0 1rem;
   }
 
+  .exit-overlay label {
+    padding: 2rem 1.5rem;
+  }
   /*---------------------
     Container-fluid
    ---------------------*/
