@@ -928,6 +928,7 @@ a.btn:hover {
 .category__menu-items {
   list-style-image: url(../images/menu-items-bullet.gif);
   padding: 1.5rem 0;
+  white-space: nowrap;
 }
 
 .category__menu-items > a {
