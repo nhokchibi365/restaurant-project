@@ -73,8 +73,7 @@ for (let i = 0; i < numOfElement; i++) {
   priceArr[i] = parseFloat(priceArr[i]);
 
   var priceDiscount = document.getElementsByClassName("price-discount");
-  priceDiscount[i].innerText =
-    (priceArr[i] - discountArr[i] * 0.01 * priceArr[i]).toFixed(2) + "$";
+  priceDiscount[i].innerText = (priceArr[i] - discountArr[i] * 0.01 * priceArr[i]).toFixed(2) + "$";
 }
 
 /* ..............................................
