@@ -110,10 +110,6 @@ a.btn:hover {
   top: 0;
   width: 100%;
   height: 100vh;
-  /* 
-  background: url("/image/bg.jpg");
-  background-size: cover;
-  background-position: bottom; */
 }
 
 .banner .clouds {
