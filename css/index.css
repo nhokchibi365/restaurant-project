@@ -124,7 +124,7 @@ a.btn:hover {
 .banner .clouds img {
   position: absolute;
   bottom: 0;
-  max-width: 100%;
+  opacity: 0.7;
   animation: effectClouds calc(20s * var(--i)) linear infinite;
 }
 
