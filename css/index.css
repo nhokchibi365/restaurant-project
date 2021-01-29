@@ -479,6 +479,7 @@ a.btn:hover {
   width: 100%;
   height: 100vh;
 }
+
 .container-fluid--bg__content {
   position: relative;
   top: 40%;
@@ -495,8 +496,6 @@ a.btn:hover {
   font-family: "Charmonman", cursive;
 
   color: var(--yellow-color);
-
-  animation: zoomIn 1 2s;
 }
 
 .gallery {
@@ -510,6 +509,7 @@ a.btn:hover {
 .container-fluid--bg__chef {
   background: url(../images/slider-02.jpg) no-repeat fixed center center;
 }
+
 /*  container-chef */
 .container-chef {
   padding: 5rem 0 3rem;
@@ -877,6 +877,7 @@ a.btn:hover {
   color: var(--white-color);
   background: var(--primary-color);
 }
+
 /* blog right */
 /* search */
 .blog-right-sidebar {
